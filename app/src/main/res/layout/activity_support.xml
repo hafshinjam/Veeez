@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context=".Activities.SupportActivity">
+
+    <FrameLayout
+        android:id="@+id/toolbar_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layoutDirection="rtl"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/Main_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/support_back_btn"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical|start"
+            android:layout_marginStart="16dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/toolbar_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|start"
+            android:layout_marginStart="56dp"
+            android:text="@string/support"
+            android:fontFamily="@font/primary_bold"
+            />
+    </FrameLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="16dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.86"
+                android:gravity="start"
+                android:paddingStart="16dp"
+                android:paddingTop="@dimen/dp8"
+                android:paddingEnd="16dp"
+                android:paddingBottom="@dimen/dp8"
+                android:text="@string/supportText1"
+                android:textAppearance="?textAppearanceSubtitle1"
+
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.86"
+                android:gravity="start"
+                android:paddingStart="16dp"
+                android:paddingTop="@dimen/dp8"
+                android:paddingEnd="16dp"
+                android:paddingBottom="@dimen/dp8"
+                android:text="@string/supportText2" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.86"
+                android:gravity="start"
+                android:paddingStart="16dp"
+                android:paddingTop="@dimen/dp8"
+                android:paddingEnd="16dp"
+                android:paddingBottom="@dimen/dp8"
+                android:text="@string/supportText3"
+                android:textAppearance="?textAppearanceSubtitle1" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.86"
+                android:gravity="start"
+                android:paddingStart="16dp"
+                android:paddingTop="@dimen/dp8"
+                android:paddingEnd="16dp"
+                android:paddingBottom="@dimen/dp8"
+                android:text="@string/supportText4" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.86"
+                android:gravity="start"
+                android:paddingStart="16dp"
+                android:paddingTop="@dimen/dp8"
+                android:paddingEnd="16dp"
+                android:paddingBottom="@dimen/dp8"
+                android:text="@string/supportText5"
+                android:textAppearance="?textAppearanceSubtitle1" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:alpha="0.86"
+                android:gravity="start"
+                android:paddingStart="16dp"
+                android:paddingTop="@dimen/dp8"
+                android:paddingEnd="16dp"
+                android:paddingBottom="@dimen/dp8"
+                android:text="@string/supportText6" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.86"
+                android:gravity="start"
+                android:paddingStart="16dp"
+                android:paddingTop="@dimen/dp8"
+                android:paddingEnd="16dp"
+                android:paddingBottom="@dimen/dp8"
+                android:text="@string/supportText7"
+                android:textAppearance="?textAppearanceSubtitle1" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.86"
+                android:gravity="start"
+                android:paddingStart="16dp"
+                android:paddingTop="@dimen/dp8"
+                android:paddingEnd="16dp"
+                android:paddingBottom="@dimen/dp8"
+                android:text="@string/supportText8" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.86"
+                android:gravity="start"
+                android:paddingStart="16dp"
+                android:paddingTop="@dimen/dp8"
+                android:paddingEnd="16dp"
+                android:paddingBottom="@dimen/dp8"
+                android:text="@string/supportText9"
+                android:textAppearance="?textAppearanceSubtitle1" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.86"
+                android:gravity="start"
+                android:paddingStart="16dp"
+                android:paddingTop="@dimen/dp8"
+                android:paddingEnd="16dp"
+                android:paddingBottom="@dimen/dp8"
+                android:text="@string/supportText10" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.86"
+                android:gravity="start"
+                android:paddingStart="16dp"
+                android:paddingTop="@dimen/dp8"
+                android:paddingEnd="16dp"
+                android:paddingBottom="@dimen/dp8"
+                android:text="@string/supportText11"
+                android:textAppearance="?textAppearanceSubtitle1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/Theme.Veeez.CardView.Support"
+                    android:layout_width="0dp"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="0.5">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="56dp"
+                            android:adjustViewBounds="true"
+                            android:padding="6dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/telegram" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/textView5"
+                            style="@style/Theme.Veeez.LongText.Bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="16dp"
+                            android:text="@string/supportText13"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/imageView3"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/Theme.Veeez.CardView.Support"
+                    android:layout_width="0dp"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="0.5">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/textView6"
+                            style="@style/Theme.Veeez.LongText.Bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="16dp"
+                            android:text="@string/supportText12"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/imageView2"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="56dp"
+                            android:adjustViewBounds="true"
+                            android:padding="6dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/instagram" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.86"
+                android:gravity="start"
+                android:paddingStart="16dp"
+                android:paddingTop="@dimen/dp8"
+                android:paddingEnd="16dp"
+                android:paddingBottom="@dimen/dp8"
+                android:text="@string/supportText14"
+                android:textAppearance="?textAppearanceSubtitle1" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="@dimen/dp8"
+                android:layout_marginStart="@dimen/dp8"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ressturantpost_prev_ui"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+</RelativeLayout>

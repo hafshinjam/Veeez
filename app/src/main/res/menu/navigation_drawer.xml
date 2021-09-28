@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/group1">
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/ic_round_person_24"
+            android:title="پروفایل" />
+
+        <item
+            android:id="@+id/wallet"
+            android:icon="@drawable/ic_baseline_credit_card_24"
+            android:title="کیف پول" />
+
+        <item
+            android:id="@+id/financialHistory"
+            android:icon="@drawable/ic_money_24"
+            android:title="گردش حساب" />
+        <item
+            android:id="@+id/orderList"
+            android:icon="@drawable/ic_baseline_shopping_cart_24"
+            android:title="سفارش ها" />
+    </group>
+
+    <group android:id="@+id/group2">
+
+        <item
+            android:id="@+id/support"
+            android:icon="@drawable/ic_baseline_support_agent_24"
+            android:title="پشتیبانی" />
+        <item
+            android:id="@+id/share"
+            android:icon="@drawable/ic_baseline_share_24"
+            android:title="معرفی به دوستان" />
+        <item
+            android:id="@+id/scoring"
+            android:icon="@drawable/ic_star"
+            android:title="امتیاز دهی به برنامه" />
+        <item
+            android:id="@+id/termsOfService"
+            android:icon="@drawable/ic_verified_user"
+            android:title="قوانین ومقررات" />
+        <item
+            android:id="@+id/question"
+            android:icon="@drawable/ic_question"
+            android:title="سوالات متداول"/>
+        <item
+            android:id="@+id/aboutUs"
+            android:icon="@drawable/ic_error"
+            android:title="درباره ما" />
+
+    </group>
+
+</menu>

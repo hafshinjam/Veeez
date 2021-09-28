@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.verification.ReceiveCodeActivity"
+    android:background="@drawable/ic_wave_4"
+    >
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp200"
+        android:layout_marginTop="@dimen/dp20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_undraw_mobile_apps_re_3wjf" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp20"
+        android:text="تایید تلفن همراه"
+        android:textSize="@dimen/sp25"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatImageView4" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="کد تایید به شماره تلفن شما ارسال گردید"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView4" />
+
+
+    <com.raycoarana.codeinputview.CodeInputView
+        android:id="@+id/codeInputView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:code_text_color="#b12eff"
+        app:error_color="#77ce9d"
+        app:input_type="numeric"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView5"
+        app:length_of_code="4"
+        app:underline_color="#457ad1"
+        app:underline_selected_color="#9e1ace" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginEnd="20dp"
+        android:text="ارسال دوباره ی کد"
+        app:layout_constraintEnd_toStartOf="@+id/resend_code_iv"
+        app:layout_constraintTop_toBottomOf="@+id/codeInputView" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/resend_code_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/codeInputView"
+        app:srcCompat="@drawable/ic_baseline_refresh_24" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:id="@+id/enter_code"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_number_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/dp40"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="ورود"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView6" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

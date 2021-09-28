@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    tools:context=".Activities.QuestionActivity">
+
+
+    <FrameLayout
+        android:id="@+id/toolbar_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/Main_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/faq_back_btn"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical|start"
+            android:layout_marginStart="16dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/toolbar_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|start"
+            android:layout_marginStart="56dp"
+            android:text="@string/questions"
+            android:fontFamily="@font/primary_bold"
+
+            />
+    </FrameLayout>
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:alpha="0.86"
+                android:gravity="start"
+                android:paddingStart="16dp"
+                android:paddingTop="@dimen/dp8"
+                android:paddingEnd="16dp"
+                android:paddingBottom="@dimen/dp8"
+                android:textAppearance="?textAppearanceSubtitle1"                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/questionText1" />
+
+            <TextView
+                style="@style/Theme.Veeez.LongText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/questionText2" />
+
+            <TextView
+                android:alpha="0.86"
+                android:gravity="start"
+                android:paddingStart="16dp"
+                android:paddingTop="@dimen/dp8"
+                android:paddingEnd="16dp"
+                android:paddingBottom="@dimen/dp8"
+                android:textAppearance="?textAppearanceSubtitle1"                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/questionText3" />
+
+            <TextView
+                style="@style/Theme.Veeez.LongText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/questionText4" />
+            <TextView
+                android:alpha="0.86"
+                android:gravity="start"
+                android:paddingStart="16dp"
+                android:paddingTop="@dimen/dp8"
+                android:paddingEnd="16dp"
+                android:paddingBottom="@dimen/dp8"
+                android:textAppearance="?textAppearanceSubtitle1"                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/questionText5" />
+
+            <TextView
+                style="@style/Theme.Veeez.LongText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/questionText6" />
+
+            <TextView
+                android:alpha="0.86"
+                android:gravity="start"
+                android:paddingStart="16dp"
+                android:paddingTop="@dimen/dp8"
+                android:paddingEnd="16dp"
+                android:paddingBottom="@dimen/dp8"
+                android:textAppearance="?textAppearanceSubtitle1"                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/questionText7" />
+
+            <TextView
+                style="@style/Theme.Veeez.LongText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/questionText8" />
+
+            <TextView
+                android:alpha="0.86"
+                android:gravity="start"
+                android:paddingStart="16dp"
+                android:paddingTop="@dimen/dp8"
+                android:paddingEnd="16dp"
+                android:paddingBottom="@dimen/dp8"
+                android:textAppearance="?textAppearanceSubtitle1"                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/questionText9" />
+
+            <TextView
+                style="@style/Theme.Veeez.LongText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/questionText10" />
+
+            <TextView
+                android:alpha="0.86"
+                android:gravity="start"
+                android:paddingStart="16dp"
+                android:paddingTop="@dimen/dp8"
+                android:paddingEnd="16dp"
+                android:paddingBottom="@dimen/dp8"
+                android:textAppearance="?textAppearanceSubtitle1"                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/questionText11" />
+
+            <TextView
+                style="@style/Theme.Veeez.LongText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/questionText12" />
+
+            <TextView
+                android:alpha="0.86"
+                android:gravity="start"
+                android:paddingStart="16dp"
+                android:paddingTop="@dimen/dp8"
+                android:paddingEnd="16dp"
+                android:paddingBottom="@dimen/dp8"
+                android:textAppearance="?textAppearanceSubtitle1"                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/questionText13" />
+
+            <TextView
+                style="@style/Theme.Veeez.LongText.Cap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/questionText14" />
+
+            <TextView
+                style="@style/Theme.Veeez.LongText.Cap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/questionText15"/>
+
+            <TextView
+                style="@style/Theme.Veeez.LongText.Cap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/questionText16" />
+
+            <TextView
+                style="@style/Theme.Veeez.LongText.Cap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/questionText17" />
+
+            <TextView
+                style="@style/Theme.Veeez.LongText.Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/questionText18" />
+
+            <TextView
+                style="@style/Theme.Veeez.LongText.Cap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/questionText19" />
+
+            <TextView
+                style="@style/Theme.Veeez.LongText.Cap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/questionText20" />
+
+            <TextView
+                style="@style/Theme.Veeez.LongText.Cap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/questionText21" />
+
+            <TextView
+                style="@style/Theme.Veeez.LongText.Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/questionText22" />
+
+            <TextView
+                style="@style/Theme.Veeez.LongText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/questionText23" />
+
+            <TextView
+                style="@style/Theme.Veeez.LongText.Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/questionText24" />
+
+            <TextView
+                style="@style/Theme.Veeez.LongText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/questionText25" />
+
+            <TextView
+                style="@style/Theme.Veeez.LongText.Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/questionText26" />
+
+            <TextView
+                style="@style/Theme.Veeez.LongText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/questionText27" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

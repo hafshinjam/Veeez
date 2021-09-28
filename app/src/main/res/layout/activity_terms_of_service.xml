@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    tools:context=".Activities.TermsOfService">
+
+    <FrameLayout
+        android:id="@+id/toolbar_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/Main_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/terms_of_service_back_btn"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical|start"
+            android:layout_marginStart="16dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/toolbar_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|start"
+            android:layout_marginStart="56dp"
+            android:fontFamily="@font/primary_bold"
+            android:text="@string/termsOfService" />
+    </FrameLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/logo" />
+
+            <LinearLayout
+                android:id="@+id/termsOfServiceCollapse"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dp8"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    style="@style/Theme.Veeez.LongText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/termsOfServicesText2" />
+
+                <TextView
+                    style="@style/Theme.Veeez.LongText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/termsOfServicesText3" />
+
+                <TextView
+                    style="@style/Theme.Veeez.LongText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/termsOfServicesText4" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/privacyPolicyCollapse"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    style="@style/Theme.Veeez.LongText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/privacyPolicyText2" />
+
+                <TextView
+                    style="@style/Theme.Veeez.LongText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/privacyPolicyText3" />
+
+                <TextView
+                    style="@style/Theme.Veeez.LongText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/privacyPolicyText4" />
+
+                <TextView
+                    style="@style/Theme.Veeez.LongText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/privacyPolicyText5" />
+
+                <TextView
+                    style="@style/Theme.Veeez.LongText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/privacyPolicyText6" />
+
+                <TextView
+                    style="@style/Theme.Veeez.LongText.Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/privacyPolicyText7" />
+
+                <TextView
+                    style="@style/Theme.Veeez.LongText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/privacyPolicyText8" />
+
+                <TextView
+                    style="@style/Theme.Veeez.LongText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/privacyPolicyText9" />
+
+                <TextView
+                    style="@style/Theme.Veeez.LongText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/privacyPolicyText10" />
+
+                <TextView
+                    style="@style/Theme.Veeez.LongText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/privacyPolicyText11" />
+
+                <TextView
+                    style="@style/Theme.Veeez.LongText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/privacyPolicyText12" />
+
+                <TextView
+                    style="@style/Theme.Veeez.LongText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/privacyPolicyText13" />
+
+                <TextView
+                    style="@style/Theme.Veeez.LongText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/privacyPolicyText14" />
+
+                <TextView
+                    style="@style/Theme.Veeez.LongText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/privacyPolicyText15" />
+
+                <TextView
+                    style="@style/Theme.Veeez.LongText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/privacyPolicyText16" />
+
+                <TextView
+                    style="@style/Theme.Veeez.LongText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/privacyPolicyText17" />
+
+                <TextView
+                    style="@style/Theme.Veeez.LongText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/privacyPolicyText18" />
+
+                <TextView
+                    style="@style/Theme.Veeez.LongText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/privacyPolicyText19" />
+
+                <TextView
+                    style="@style/Theme.Veeez.LongText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/privacyPolicyText20" />
+
+                <TextView
+                    style="@style/Theme.Veeez.LongText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/privacyPolicyText21" />
+
+                <TextView
+                    style="@style/Theme.Veeez.LongText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/privacyPolicyText22" />
+
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</LinearLayout>

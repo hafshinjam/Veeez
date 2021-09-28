@@ -1,0 +1,184 @@
+<resources>
+    <string name="app_name">Veeez</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="phone_hint">شماره ی همراه</string>
+    <string name="main_page">صفحه اصلی</string>
+    <string name="profileedit">profileEdit</string>
+
+    <string name="mapbox_access_token">pk.eyJ1Ijoic2FqamFkYWxpemFkZWgiLCJhIjoiY2t0aDhmdWJhMHBqZDJ1cGV6Nmd1M2JkbCJ9.VGRKHN44wV9P2qTHY4BOPA</string>
+
+    <string name="origin_search">جستجوی مبدا</string>
+    <string name="destination_search">جستجوی مقصد</string>
+    <string name="text_search">جستجوی متنی</string>
+    <string name="search">جستجو در ویز</string>
+    <string name="confirm_origin">تایید مبدا</string>
+    <string name="select_origin">انتخاب مبدا</string>
+
+    <string name="confirm_destination">تایید مقصد</string>
+    <string name="select_destination">انتخاب مقصد</string>
+
+    <string name="network_error">خطا در دریافت اطلاعات</string>
+
+    <string name="retry">تلاش دوباره</string>
+    <string name="username">نام کاربری</string>
+
+
+    <string name="welcome">به ویز خوش آمدید</string>
+    <string name="inter_your_number">شماره همراه تان را جهت دریافت کد فعالسازی وارد کنید</string>
+    <string name="phone_number">شماره تلفن همراه</string>
+    <string name="phone_number_hint">09123456789</string>
+    <string name="terms_of_service_1"><u>قوانین و مقررات</u></string>
+    <string name="terms_of_service_2"> ویز را می پذیرم.</string>
+    <string name="slogan">ویز جابجایی سریع کالا برای مشتریان ، درآمدی بالا برای سفیران</string>
+    <string name="create_account">حساب کاربری بسازید</string>
+    <string name="loginScreenTitle">ورود به حساب کاربری</string>
+    <string name="loginTitle">ورود</string>
+    <string name="signUpHint">حساب کاربری ندارید؟</string>
+    <string name="signUp">ثبت نام</string>
+    <string name="signUpScreenTitle">ایجاد حساب کاربری</string>
+    <string name="loginHint">قبلا ثبت نام کردید؟</string>
+    <string name="cartEmptyStateLoginRequired">وارد حساب کاربری خود شوید</string>
+    <string name="cartEmptyStateCallToAction">ورود به حساب کاربری</string>
+    <string name="authTermsOfService1">ثبت نام و ورود به منظور پذیرفتن</string>
+    <string name="authTermsOfService2"> قوانین </string>
+    <string name="authTermsOfService3">ویز است</string>
+    <string name="nameLastName">نام و نام خانوادگی</string>
+    <string name="introCode">کد معرف</string>
+
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+
+
+    <string name="normalDeliveryCourier">پیک عادی</string>
+    <string name="normalDeliveryCourierTitle">بسته خود را به هر نقطه ای در شهر ارسال کنید</string>
+    <string name="postDeliveryCourier">پیک پستی</string>
+    <string name="postDeliveryCourierTitle">ارسال مرسوله پستی از درب خانه شما به هر جای ایران</string>
+    <string name="restaurantShopCourier">پیک رستوران و فروشگاه</string>
+    <string name="restaurantShopCourierTitle">امکان ارسال سفارشات ویژه صاحبان رستوران و فروشگاهها</string>
+    <string name="fastCourier">سرعت بالا</string>
+    <string name="fastCourierTitle">ویز سریعترین اپلیکیشن ارسال پیک و جابجایی کالا</string>
+    <string name="mainScreen">صفحه اصلی</string>
+
+    <string name="drawerHeaderTitle1">حساب کاربری</string>
+
+    <string name="profileEdit">پروفایل</string>
+    <string name="wallet">کیف پول</string>
+    <string name="financialHistory">گردش حساب</string>
+    <string name="messageList">پیام ها</string>
+    <string name="orderList">سفارش ها</string>
+    <string name="addressList">آدرس ها</string>
+
+    <string name="support">پشتیبانی</string>
+    <string name="share">معرفی به دوستان</string>
+    <string name="scoring">امتیازدهی به برنامه</string>
+    <string name="aboutUs">درباره ما</string>
+    <string name="termsOfService">قوانین و مقررات</string>
+    <string name="questions">سوالات متداول</string>
+
+    <string name="next">بعدی</string>
+    <string name="done">پایان</string>
+
+    <string name="creditCurrent">اعتبار فعلی</string>
+    <string name="creditIncrease">افزایش اعتبار</string>
+    <string name="pay">پرداخت</string>
+    <string name="interCustomAmount">ورود مبلغ دلخواه به تومان</string>
+    <string name="toman">تومان</string>
+    <string name="creditIncreaseTo">اعتبار بعد از افزایش</string>
+    <string name="payableAmount">مبلغ قابل پرداخت</string>
+
+    <string name="payType">نوع پرداخت</string>
+
+    <string name="getAddress">مبدا</string>
+    <string name="postAddress">مقصد</string>
+    <string name="fullNameSender">ارسال کننده</string>
+    <string name="fullNameReceiver">دریافت کننده</string>
+    <string name="dateTimeGetOrder">ثبت سفارش</string>
+
+    <!--    <string name="dateTimeGetOrder">باقی مانده</string>-->
+    <!--    <string name="dateTimeGetOrder">برداشت شده </string>-->
+    <!--    <string name="dateTimeGetOrder">ثبت سفارش</string>-->
+
+    <string name="aboutUsText1">محیط کاربری ساده</string>
+    <string name="aboutUsText2">از طریق اپلیکیشن ویز می توانید با فشردن چند دکمه در هر زمان و هرکجا که هستید، در خواست پیک موتوری بدهید. </string>
+    <string name="aboutUsText3">ارسال آسان</string>
+    <string name="aboutUsText4">همچنین می توانید مرسوله پستی خود را از درب منزل به سفیر ما بسپارید تا در اسرع وقت بسته شما به هر نقطه ای از کشور ارسال شود.</string>
+    <string name="aboutUsText5">مناسب کسب و کار ها</string>
+    <string name="aboutUsText6">اگر صاحب رستوران یا فروشگاه می باشید ویز امکان ارسال سفارشات شما را به مشتریان با تنها لمس یک دکمه فراهم میسازد.</string>
+
+    <string name="supportText1">آدرس دفتر مرکزی</string>
+    <string name="supportText2">سنندج چهار راه شهدا(فرح) ، نبش خیابان ۱۷ شهریور پلاک ۵</string>
+    <string name="supportText3">تلفن</string>
+    <string name="supportText4">۳۳۱۵۱۶۷۲-۰۸۷ </string>
+    <string name="supportText5">نشانی الکترونیکی</string>
+    <string name="supportText6">veeezdelivery@chmail.ir</string>
+    <string name="supportText7">واتس اپ</string>
+    <string name="supportText8">۰۹۳۰۶۰۹۹۹۰۴ - ۰۹۱۸۱۷۰۰۴۸۵</string>
+    <string name="supportText9">کدپستی</string>
+    <string name="supportText10">۶۶۱۴۸۱۳۵۷۵</string>
+    <string name="supportText11">شبکه های اجتماعی</string>
+    <string name="supportText12">اینستاگرام</string>
+    <string name="supportText13">تلگرام</string>
+    <string name="supportText14">نشانی روی نقشه</string>
+    <string name="submit_order">ثبت سفارش</string>
+
+    <string name="profileText1">آدرس های شما</string>
+    <string name="profileText2">پیام ها</string>
+    <string name="profileText3">خروج از حساب</string>
+
+    <string name="termsOfServicesText1">@string/termsOfService</string>
+    <string name="termsOfServicesText2">مشتریان (کاربران) که قصد استفاده از خدمات ویز را دارند، لازم است این ضوابط و مقررات را به طور کامل مطالعه و سپس اقدام به عضویت و یا ثبت درخواست خود درسامانه ویز نمایند. لازم به ذکر است که کاربران با ثبت درخواست خدمات و یا عضویت در سامانه ویز، در واقع اعلام می نمایند که کلیه ضوابط و مقررات را مطالعه نموده و ملتزم به آن می باشند و طبق ماده ۱۰ قانون مدنی با ثبت درخواست در سامانه در واقع قراردادی بین کاربر و ویز منعقد گردیده که لذا ویز در خصوص هرگونه ادعایی مبنی بر بی اطلاعی کاربران و سفیران مسئولیتی ندارد ، همچنین کاربر باید توجه نماید که این ضوابط و مقررات در طول زمان قابل تغییر است و این تغییرات در پایگاه اینترنتی، برنامه و سامانه ویز به روز رسانی می گردد، لذا مسئولیت مطالعه و آگاهی از این تغییرات بر عهده کاربران و سفیران می باشد.</string>
+    <string name="termsOfServicesText3">ویز در طراحی سامانه حمل و نقل مرسولات و همچنین مرسوله ی سپرده شده به سفیر تابع قوانین جمهوری اسلامی از جمله ممنوعیت حمل مشروبات الکلی ، مواد شیمیایی و مخدر ، اسناد مدارک تجاری وهرگونه کالا که مغایر با قوانین جمهوری اسلامی و شرکت ملی پست می باشد مسولیتی ندارد و در صورت هرگونه تخلف عواقب آن برعهده ی سفیر و کاربر مورد نظر می باشد .</string>
+    <string name="termsOfServicesText4">کلیه اصول و رویه‏‌های ویز منطبق با قوانین جمهوری اسلامی ایران، قانون تجارت الکترونیک و قانون حمایت از حقوق مصرف کنندگان است.</string>
+    <string name="privacyPolicyText1">حریم خصوصی</string>
+    <string name="privacyPolicyText2">ویز ضمن احترامی که برای حریم شخصی کاربران قائل است، برای استفاده از امکانات اپلیکیشن اطلاعاتی را از کاربران درخواست می‌کند تا بتواند خدماتی امن و مطمئن را به مشتریان خودارائه دهد.</string>
+    <string name="privacyPolicyText3">ویز درباره این اطلاعات مطابق با قانون حریم خصوصی جمهوری اسلامی ایران عمل می‌کند. هنگام استفاده از ویز، ممکن است اطلاعاتی درباره خودتان، مانند شماره تلفن و نشانی پست الکترونیکی ارائه کرده یا اطلاعاتی درباره مرسوله ثبت کنید، شما این امکان را در اختیار ویز قرار می‌دهید که اطلاعات هویتی و تماستان را در اختیار سفیر عضو ویز و در صورت لزوم گیرنده مرسوله قرار بدهد، تا بتوانند درباره درخواستی که دارید، با شما تماس بگیرند.</string>
+    <string name="privacyPolicyText4">کاربران برای ثبت سفارش از طریق ویز، باید اطلاعات درخواست شده را به درستی اعلام نمایند و ویز مسئولیتی در قبال هر گونه مشکلات ایجاد شده به دلیل ارائه اطلاعات نادرست نخواهد داشت.</string>
+    <string name="privacyPolicyText5">مسئولیت حفظ و نگهداری از اطلاعات ورود به حساب کاربری شامل نام کاربری، رمز عبور و اطلاعات شخصی درج شده بر روی سایت و اپلیکیشن، بر عهده کاربران است. برای جلوگیری از هرگونه سوء استفاده احتمالی، کاربران نباید این اطلاعات را برای شخص دیگری فاش کنند.</string>
+    <string name="privacyPolicyText6">این اپلیکیشن، تنها مرجع رسمی برای ثبت و پیگیری سفارش مشتریان است، اپلیکیشن ویز از طریق کافه بازار قابل دانلود شدن است. اما کاربران جهت برقراری ارتباط می توانند با پشتیبانی ویز تماس حاصل فرمایند.</string>
+    <string name="privacyPolicyText7">ثبت، پردازش و ارسال سفارش</string>
+    <string name="privacyPolicyText8">خدماتی که از سوی ویز به کاربران داده می شود 24 ساعته بوده و تمامی سفارشات ثبت شده در همان روز کاری و در اسرع وقت در دست اقدام قرار می گیرد.ارسال مرسوله در ویز تحت شرایط و قوانین مندرج در ذیل امکان پذیر است. عدم توجه به نکات بیان شده، در صورت بروز خسارت مسئولیتی را برای پرداخت خسارت متوجه ویز نمی کند.</string>
+    <string name="privacyPolicyText9">بر اساس قوانین ویز و با هدف ایجاد بستری امن برای جابجایی مرسولات, ویز این حق را برای همه سفیران خود قائل است که مرسولات بیش از 25 کیلوگرم و اندازه بیشتر از 40*40*40 سانتیمتر را جابجا نکنند.در صورت اصرار فرستنده و ارائه هزینه اضافه به سفیر ویز برای حمل بار غیر مجاز، مسئولیت حمل بار با فرستنده بوده و در صورت صدمه دیدن بار خسارتی به فرستنده پرداخت نمی شود.</string>
+    <string name="privacyPolicyText10">برای سفارش هایی که نیاز به احراز هویت تحویل گیرنده بسته باشد، لازم است فرستنده در بخش های مربوطه نام، نام خانوادگی و شماره تماس گیرنده را درج کند. نکته مهم اینکه در ارسال مرسوله به شرکت ها، سازمان ها و مراکزی که ورود و خروج افراد با محدودیت مواجه است فرستنده باید هماهنگی های لازم را با گیرنده انجام دهد. در غیر این صورت ویز مسئولیتی در قبال احراز هویت تحویل گیرنده بسته در آدرس اعلام شده ندارد.</string>
+    <string name="privacyPolicyText11">* فرستنده باید اطلاعات کامل فرد گیرنده شامل نام، نام خانوادگی و شماره تماس را درج کند. مسئولیت هماهنگی های لازم برای ارسال بار به مراکز حمل بار اعم از باربری ها، ترمینال ها و … که فرد تحویل گیرنده در آن مشخص نیست، فرستنده مرسوله بوده و سفیر و شرکت ویز مسئولیتی در قبال پرداخت هزینه حمل بار، مفقود شدن و یا خسارت های احتمالی ندارد.</string>
+    <string name="privacyPolicyText12">همچنین اگر فرستنده آدرس گیرنده را به طور کامل در بخش توضیحات درج نکرده باشد به طوری که موجب عدم تحویل محموله شود و یا گیرنده از گرفتن مرسوله خودداری کند به نحوی که محموله به مبدا عودت داده شود، فرستنده مکلف به تحویل گرفتن محموله بوده و متعهد به پرداخت هزینه رفت و برگشت و معطلی سفیر ویز خواهد بود.</string>
+    <string name="privacyPolicyText13">در هنگام تحویل مرسوله فرستنده مرسوله باید محتویات بسته را به رویت سفیر ویز برساند واجازه بدهد که صحت،سلامت و قانونی بودن مرسوله به تایید سفیر ویز برسد. در غیر این صورت ویز در قبال محتوای غیر قابل رویت بسته ها هیچ مسئولیتی ندارد.</string>
+    <string name="privacyPolicyText14">فرستنده باید بسته بندی مناسبی برای ارسال مرسوله درنظر بگیرد. چنانچه مرسوله به دلیل عدم رعایت این موضوع صدمه کلی یا جزئی ببیند هیچ مسئولیتی برای پرداخت خسارت بر عهده ویز نیست.</string>
+    <string name="privacyPolicyText15">فرستنده مرسوله مکلف است براساس ماده 379 قانون تجارت، نوع، جنس، وزن و ارزش واقعی مرسوله خود را در بخش توضیحات در خواست اعلام کند.درصورت بروزخسارت به دلیل عدم اعلام نکات فوق مسئولیتی متوجه ویز نخواهد بود.</string>
+    <string name="privacyPolicyText16">حمل مدارک شناسایی افراد، چک سفید امضا، چک در وجه حامل، طلاو جواهر، پول نقد، مواد فاسد شدنی و مواد اشتعال زا، محصولات خارجی غیر مجاز و قاچاق، خارج از قوانین ویز بوده و ویز مسئولیتی در قبال خدشه دارشدن،گم شدن ویا مفقود شدن این مرسوله ها بر عهده ندارد.</string>
+    <string name="privacyPolicyText17">مسئولیت ارسال مواد مخدر، روان گردان ها، مشروبات الکی و بسته های حاوی اقلام مغایر با قوانین جمهوری اسلامی ایران ، بر عهده فرستنده بسته بوده و پاسخگویی در قبال آن در کلیه مراجع اداری ، انتظامی و قضایی مستقیما به عهده ایشان است. همچنین فرستنده باید خساراتی که به سبب این امر به ویز وارد شده را نیز جبران نماید.</string>
+    <string name="privacyPolicyText18">چنانچه مرسوله ارسالی توسط کاربر ویز به دلایل غیر قابل پیش بینی چون تصادف، خرابی موتورسیکلت و غیره با تاخیر به مقصد برسد در حکم فورس ماژور و قوه قاهره بوده لذا خسارت ناشی از تاخیر در ارسال، مسئولیتی را متوجه ویز نمی کند.</string>
+    <string name="privacyPolicyText19">فرستنده بسته لازم است با اطمینان کامل از گیرنده ، نسبت به ثبت سفارش اقدام کند. سفیر ویز تنها وظیفه حمل مرسوله را بر عهده دارد و پیگیری مراودات مالی فرستنده و گیرنده در حیطه وظایف سفیر ویز نیست. از این رو خسارت ناشی از عدم پرداخت هزینه مرسوله ی حمل شده تحت پوشش ویز نبوده و ویز مسئولیتی در قبال عدم پرداخت وجه مرسوله از سوی گیرنده برعهده ندارد.</string>
+    <string name="privacyPolicyText20">فرستنده باید قیمت و ارزش مرسوله را در هنگام در خواست اعلام کند.ویز در قبال پرداخت خسارت برای بسته هایی که ارزش آن ها در بخش توضیحات اظهار نشده باشد هیچ مسئولیتی ندارد.</string>
+    <string name="privacyPolicyText21">پرداخت خسارت فقط در قبال احراز آسیب فیزیکی به کالایی که ارزش واقعی آن کمتر از 10 میلیون ریال می باشد امکان پذیر است و ویز در قبال اشکالات یا خرابی های ذاتی کالا که ارتباط آن ها با خسارت فیزیکی (ضربه خوردگی، آب دیدگی، شکستگی) احراز نشود، هیچ مسئولیتی ندارد.</string>
+    <string name="privacyPolicyText22">ویز در قبال پرداخت خسارت به بسته های نامتعارف برای حمل با موتورسیکلت، کالاهایی که توسط فرستنده به نحو مناسب بسته بندی نشده باشند و یا کالاهایی که حمل با موتورسیکلت روش مناسب جابجایی آن ها نباشد، هیچ تعهدی بر عهده ندارد.</string>
+
+    <string name="questionText1">1-ویز بر روی چه سیستم عاملی کار می کند؟</string>
+    <string name="questionText2">در حال حاضر برای کاربران فقط نسخه اندروید و برای صاحبان فروشگاه پنل مدیرتی که در اختیار ایشان قرار خواهد گرفت</string>
+    <string name="questionText3">2-آیا به صورت تلفنی می توانم سفارش پیک بدهم؟</string>
+    <string name="questionText4">بله با شماره گیری 08733151672 می توانید به صورت تلفنی سفارش خود را انجام دهید</string>
+    <string name="questionText5">3- برای محاسبه هزینه ایی که اداره پست دریافت می کند باید چه کار کنم؟</string>
+    <string name="questionText6">نرم افزار ما به صورت دقیق این هزینه را محاسبه و با هزینه پیک جمع می کند </string>
+    <string name="questionText7">4- آیا امکان دریافت هزینه پیک توسط گیرنده وجود دارد؟</string>
+    <string name="questionText8">بله با استفاده از امکانی که در اختیار کاربران قرار داده شده است این امکان وجود دارد که هزینه پیک توسط دریافت کننده مروسله پرداخت شود</string>
+    <string name="questionText9">5- آیا می توان سفر را کنسل کرد؟ </string>
+    <string name="questionText10">بله با توجه به امکان تعبیه شده در اپلیکیشن قابلیت کنسل کردن سفر در خواستی مهیا می باشد</string>
+    <string name="questionText11">6- هزینه دریافتی پیک برای فروشگاهها و رستوان ها چگونه تصویه می شود؟</string>
+    <string name="questionText12">با گرفتن شماره کارت یا شماره شبای رستوران ها و فروشگاهها شرکت ویز در روز بعد  همه مبلغ سفارشات ارسالی را ب صاحبان این اماکن تصویه می کند</string>
+    <string name="questionText13">7- با ویز چطور میتوانم درخواست پیک عادی بدهم؟</string>
+    <string name="questionText14">۱- ابتدا از طریق موبایل به اینترنت وصل باشید</string>
+    <string name="questionText15">۲- نرم افزار ویزرا از کافه بازار دانلود و نصب کنید</string>
+    <string name="questionText16">۳- از طریق اپلیکیشن ویز، روی نقشه مبدا و مقصد خود را روی نقشه مشخص کنید</string>
+    <string name="questionText17">4- هزینه سفر را مشاهده کنید و سپس درخواست  پیک عادی(برای ارسال بسته و مرسولات) دهید و نزدیک‌ترین سرویس ویز مرسوله شما  را به مقصد خواهد رساند</string>
+    <string name="questionText18">8-با ویز چطور میتوانم درخواست پیک پستی بدهم؟</string>
+    <string name="questionText19">1-از طریق اپلیکیشن ویز وارد قسمت پیک پستی شوید</string>
+    <string name="questionText20">2- مشخصات کاملی که سفیر ما در اداره پست باید تکمیل کند وارد کنید مانند آدرس مبدا، مقصد، پلاک ،طبقه ،وزن محصول ،سایز کارتن یا پاکت در صورت نیاز، بیمه مرسوله در صورت تمایل و ارزش گذاری مرسوله</string>
+    <string name="questionText21">3- هزینه سفر را مشاهده کنید و سپس درخواست  پیک پستی(برای تحویل به اداره پست) دهید و نزدیک‌ترین سرویس ویز مرسوله شما  را به مقصد خواهد رساند</string>
+    <string name="questionText22">9-با ویز چطور میتوانم درخواست پیک  فروشگاه یا رستوران بدهم؟</string>
+    <string name="questionText23">صاحبان رستوران یا فروشگاهها به راحتی می توانند با وارد کردن یک یا چند عدد سفارش و مجموع مبالغ سفارشات درخواست پیک فرمایند</string>
+    <string name="questionText24">10-آیا قیمت های ویز برای یک مسیر یکسان متغیرند؟</string>
+    <string name="questionText25">بله. قیمت‌ها بر اساس ساعت‌های روز،  میزان ترافیک، دسترسی، درخواست‌های محدوده و نوع سرویس درخواستی شما متغیر هستند</string>
+    <string name="questionText26">11-حسابم را آنلاین شارژ کرده‌ام، پول از حسابم کم شده ولی ویز من شارژ نشده است. لطفا راهنمایی‌ام کنید!</string>
+    <string name="questionText27">مبلغ کسر شده طی ۷۲ ساعت کاری به حساب شما برگردانده خواهد شد. در صورت عدم بازپرداخت این مبلغ ، لطفا شماره پیگیری، 4 رقم اخر کارت بانکی خود، و مبلغ و تاریخ تراکنش را به آدرس ‌ الکترونیکیveeezdelivery@chmail.com ارسال کنید. بازپرداخت پول شما در اولین فرصت پیگیری و نتیجه به شما اطلاع داده می‌شود.</string>
+
+</resources>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.Veeez.EditText.Layout" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:textAppearance">?textAppearanceCaption</item>
+        <item name="android:layout_height">58dp</item>
+        <item name="android:gravity">start</item>
+    </style>
+
+    <style name="Theme.Veeez.EditText" parent="Theme.Veeez">
+        <item name="android:textAppearance">?textAppearanceBody1</item>
+        <item name="android:gravity">start</item>
+    </style>
+
+    <style name="Theme.Veeez.CardView" parent="Theme.Veeez">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">168dp</item>
+        <item name="cardElevation">@dimen/radius</item>
+        <item name="contentPadding">16dp</item>
+        <item name="cardCornerRadius">@dimen/radius</item>
+        <item name="android:clickable">true</item>
+        <item name="android:checkable">false</item>
+        <item name="android:layout_marginStart">12dp</item>
+        <item name="android:layout_marginEnd">12dp</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:layout_marginBottom">6dp</item>
+        <item name="android:background">@color/secondaryColor</item>
+    </style>
+
+    <style name="Theme.Veeez.CardView.Message" parent="Theme.Veeez">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="cardElevation">@dimen/radius</item>
+        <item name="cardCornerRadius">@dimen/radius</item>
+        <item name="android:clickable">true</item>
+        <item name="android:checkable">false</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+    <style name="Theme.Veeez.CardView.Address" parent="@style/Theme.Veeez.CardView.Message">
+
+        <item name="android:layout_height">100dp</item>
+
+    </style>
+
+    <style name="Theme.Veeez.CardView.Profile" parent="@style/Theme.Veeez.CardView.Message">
+
+        <item name="android:layout_height">48dp</item>
+
+    </style>
+
+    <style name="Theme.Veeez.CardView.All" parent="@style/Theme.Veeez.CardView.Message">
+
+        <item name="android:layout_height">48dp</item>
+
+    </style>
+
+    <style name="Theme.Veeez.CardView.Support" parent="@style/Theme.Veeez.CardView.Message">
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+
+    </style>
+
+    <style name="Theme.Veeez.SlideView" parent="Theme.Veeez">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:elevation">8dp</item>
+        <item name="cardCornerRadius">@dimen/radius</item>
+        <item name="android:clickable">false</item>
+        <item name="android:checkable">false</item>
+        <item name="android:layout_marginStart">24dp</item>
+        <item name="android:layout_marginEnd">24dp</item>
+        <item name="android:background">@color/secondaryColor</item>
+        <item name="android:layout_marginTop">64dp</item>
+        <item name="android:layout_marginBottom">64dp</item>
+    </style>
+
+    <style name="Theme.Veeez.LongText" parent="Theme.Veeez">
+        <item name="android:padding">16dp</item>
+        <item name="android:gravity">start</item>
+        <item name="android:justificationMode" tools:targetApi="o">inter_word</item>
+        <item name="android:textAppearance">?textAppearanceBody1</item>
+    </style>
+
+    <style name="Theme.Veeez.LongText.Title" parent="Theme.Veeez.LongText">
+        <item name="android:textAppearance">?textAppearanceHeadline5</item>
+    </style>
+
+    <style name="Theme.Veeez.LongText.Bold" parent="Theme.Veeez.LongText">
+        <item name="fontFamily">@font/primary_bold</item>
+        <item name="android:fontFamily">@font/primary_bold</item>
+    </style>
+
+    <style name="Theme.Veeez.LongText.Cap" parent="Theme.Veeez.LongText">
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingEnd">24dp</item>
+        <item name="android:textAppearance">?textAppearanceCaption</item>
+        <item name="android:alpha">0.60</item>
+    </style>
+
+    <style name="Theme.Veeez.Divider.Horizontal" parent="Theme.Veeez">
+        <item name="android:background">@color/secondaryColor</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:layout_marginBottom">1dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+
+    <style name="Theme.Veeez.Divider.Vertical" parent="Theme.Veeez">
+        <item name="android:background">@color/secondaryColor</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:layout_marginStart">1dp</item>
+        <item name="android:layout_marginEnd">1dp</item>
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+</resources>

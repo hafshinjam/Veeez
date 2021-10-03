@@ -4,6 +4,8 @@ import com.example.veeez.data.ApplyVoucherResponse;
 import com.example.veeez.data.AuthResponse;
 import com.example.veeez.data.CalculatePriceResponse;
 import com.example.veeez.data.UserAddressResponse;
+import com.example.veeez.feature.financial.FinancialResponse;
+import com.example.veeez.feature.message.UserMessageResponse;
 import com.google.gson.JsonObject;
 
 import io.reactivex.Single;
@@ -25,7 +27,6 @@ public interface VeeezApiInterface {
     @GET("VerificationCode/Resend")
     Single<AuthResponse> resendVerification(@Query("PhoneNumber") String phone);
 
-
     @POST("Orders/Calculate")
     Single<CalculatePriceResponse> getPrice(@Body JsonObject jsonObject);
 
@@ -36,9 +37,19 @@ public interface VeeezApiInterface {
     Single<Boolean> isServerReady();
 
     @GET("SelectedAddress/List")
-    Single<UserAddressResponse> getUserList(@Query("UserId") String userId);
+    Single<UserAddressResponse> getUserAddressList(@Query("UserId") String userId);
 
+    @GET("UserInformation/Notification")
+    Single<UserMessageResponse> getUserMessages(@Query("UserId") String userId);
 
+    @GET()
+    Single getUserInfo(@Query("UserId") String userId);
+
+    @POST("UserInformation/EditUser")
+    Single editUserData(@Body JsonObject userObject);
+
+    @GET("UserInformation/Payment")
+    Single<FinancialResponse> getFinancialItems(@Query("UserId") String userId);
 
 
 }

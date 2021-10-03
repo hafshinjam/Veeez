@@ -41,7 +41,7 @@ public class AddressActivity extends AppCompatActivity {
         initView();
 
 
-        addressRv.setLayoutManager(new LinearLayoutManager(this,RecyclerView.VERTICAL,false));
+        addressRv.setLayoutManager(new LinearLayoutManager(this, RecyclerView.VERTICAL, false));
 
         viewModel.getAddress("ba53ab81-fbf3-40b1-aacc-6be48841264f")
                 .subscribeOn(Schedulers.io())
@@ -54,17 +54,17 @@ public class AddressActivity extends AppCompatActivity {
 
                     @Override
                     public void onSuccess(@NotNull UserAddressResponse userAddressResponse) {
-                        addressRv.setAdapter(new AddressRecyclerAdapter(userAddressResponse)) ;
+                        addressRv.setAdapter(new AddressRecyclerAdapter(userAddressResponse));
                     }
 
                     @Override
                     public void onError(@NotNull Throwable e) {
-                        Log.i("TAG", "onError: "+e.toString());
+                        Log.i("TAG", "onError: " + e.toString());
                     }
                 });
 
 
-        ic_back=findViewById(R.id.address_back_btn);
+        ic_back = findViewById(R.id.address_back_btn);
         ic_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

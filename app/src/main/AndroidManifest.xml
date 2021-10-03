@@ -13,7 +13,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Veeez">
-        <activity android:name=".feature.map.order.postal.PostalShippingActivity"></activity>
+        <activity
+            android:name=".feature.UserEditProfileActivity"
+            android:exported="true" />
+        <activity android:name=".feature.map.order.postal.PostalShippingActivity" />
         <activity
             android:name=".feature.WaitingActivity"
             android:exported="true" />
@@ -66,9 +69,7 @@
             android:exported="true" />
         <activity android:name=".feature.map.search.SearchActivity" />
         <activity android:name=".feature.map.PostalActivity" />
-        <activity android:name=".feature.splash.SplashActivity">
-
-        </activity>
+        <activity android:name=".feature.splash.SplashActivity"></activity>
 
         <service android:name=".feature.map.SubmitOrderService" />
     </application>

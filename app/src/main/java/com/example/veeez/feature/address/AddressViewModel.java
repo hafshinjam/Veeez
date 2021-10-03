@@ -1,7 +1,6 @@
 package com.example.veeez.feature.address;
 
 import com.example.veeez.data.UserAddressResponse;
-import com.example.veeez.data.UserManager;
 import com.example.veeez.services.http.veeez.VeeezApiInterface;
 
 import io.reactivex.Single;
@@ -15,6 +14,6 @@ public class AddressViewModel {
     }
 
     public Single<UserAddressResponse> getAddress(String userId){
-        return apiInterface.getUserList(userId);
+        return apiInterface.getUserAddressList(userId);
     }
 }

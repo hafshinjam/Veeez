@@ -40,26 +40,27 @@
     </FrameLayout>
 
     <LinearLayout
-        android:layout_marginTop="56dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
         android:orientation="vertical">
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="128dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="@dimen/dp8"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="@dimen/dp8"
             android:background="@color/white"
             app:cardCornerRadius="@dimen/dp8"
-            app:cardElevation="@dimen/dp8"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginTop="@dimen/dp8"
-            android:layout_marginBottom="@dimen/dp8"
-            >
+            app:cardElevation="@dimen/dp8">
+
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/profileEditImage"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/profileEditImage">
+                android:layout_height="match_parent">
+
                 <androidx.cardview.widget.CardView
                     android:id="@+id/profileCv"
                     android:layout_width="96dp"
@@ -113,6 +114,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/profileTvGmail" />
 
                 <ImageView
+                    android:id="@+id/profileEditButton"
                     android:layout_width="48dp"
                     android:layout_height="48dp"
                     android:layout_marginEnd="16dp"
@@ -121,56 +123,56 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/ic_edit"
-                    app:tint="@color/black"/>
+                    app:tint="@color/black" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </androidx.cardview.widget.CardView>
-
+        </androidx.cardview.widget.CardView>
 
 
         <androidx.cardview.widget.CardView
             android:id="@+id/profileAddressLayout"
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            app:cardElevation="@dimen/dp8"
-            app:cardCornerRadius="@dimen/dp8"
             android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
             android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
             android:layout_marginBottom="8dp"
+            app:cardCornerRadius="@dimen/dp8"
+            app:cardElevation="@dimen/dp8"
 
             >
+
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
                 android:id="@+id/cons_address"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <androidx.appcompat.widget.AppCompatImageView
                     android:layout_width="48dp"
                     android:layout_height="48dp"
-                    android:scaleType="centerInside"
-                    app:tint="@color/black"
                     android:alpha="0.60"
+                    android:scaleType="centerInside"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/ic_arrow_right" />
+                    app:srcCompat="@drawable/ic_arrow_right"
+                    app:tint="@color/black" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/profileTvAddress"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
-                    android:drawablePadding="4dp"
                     android:alpha="0.87"
-                    android:textColor="@color/black"
+                    android:drawablePadding="4dp"
                     android:text="@string/profileText1"
+                    android:textColor="@color/black"
+                    app:drawableStartCompat="@drawable/ic_star"
+                    app:drawableTint="@color/black"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:drawableStartCompat="@drawable/ic_star"
-                    app:drawableTint="@color/black" />
+                    app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -178,22 +180,21 @@
         </androidx.cardview.widget.CardView>
 
 
-
         <androidx.cardview.widget.CardView
 
             android:id="@+id/profileMessageLayout"
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            app:cardElevation="@dimen/dp8"
-            app:cardCornerRadius="@dimen/dp8"
             android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
             android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
             android:layout_marginBottom="8dp"
-            >
+            app:cardCornerRadius="@dimen/dp8"
+            app:cardElevation="@dimen/dp8">
+
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
                 android:id="@+id/cons_message"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <androidx.appcompat.widget.AppCompatTextView
@@ -205,21 +206,22 @@
                     android:drawablePadding="4dp"
                     android:text="@string/profileText2"
                     android:textColor="@color/black"
+                    app:drawableStartCompat="@drawable/ic_message"
+                    app:drawableTint="@color/black"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:drawableTint="@color/black"
-                    app:drawableStartCompat="@drawable/ic_message" />
+                    app:layout_constraintTop_toTopOf="parent" />
+
                 <androidx.appcompat.widget.AppCompatImageView
                     android:layout_width="48dp"
                     android:layout_height="48dp"
-                    android:scaleType="centerInside"
-                    app:tint="@color/black"
                     android:alpha="0.60"
+                    android:scaleType="centerInside"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/ic_arrow_right" />
+                    app:srcCompat="@drawable/ic_arrow_right"
+                    app:tint="@color/black" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
 
@@ -227,14 +229,15 @@
             android:id="@+id/profileLogoutLayout"
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            app:cardElevation="@dimen/dp8"
-            app:cardCornerRadius="@dimen/dp8"
             android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
             android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
             android:layout_marginBottom="8dp"
+            app:cardCornerRadius="@dimen/dp8"
+            app:cardElevation="@dimen/dp8"
 
             >
+
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
@@ -243,32 +246,29 @@
                     android:id="@+id/profileTvLogout"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:drawablePadding="4dp"
                     android:layout_marginStart="16dp"
-                    android:textColor="@color/error_text"
                     android:alpha="0.87"
+                    android:drawablePadding="4dp"
                     android:text="@string/profileText3"
+                    android:textColor="@color/error_text"
+                    app:drawableStartCompat="@drawable/ic_log_out"
+                    app:drawableTint="@color/black"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:drawableTint="@color/black"
-                    app:drawableStartCompat="@drawable/ic_log_out" />
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <androidx.appcompat.widget.AppCompatImageView
                     android:layout_width="48dp"
                     android:layout_height="48dp"
+                    android:alpha="0.60"
                     android:scaleType="centerInside"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/ic_arrow_right"
-                    app:tint="@color/black"
-                    android:alpha="0.60"/>
+                    app:tint="@color/black" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
-
-
-
 
 
     </LinearLayout>

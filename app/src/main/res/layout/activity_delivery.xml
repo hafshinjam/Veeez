@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layoutDirection="rtl"
-    tools:context=".Activities.map.DeliveryActivity">
+    tools:context=".feature.map.DeliveryActivity">
 
 
     <FrameLayout
@@ -29,8 +29,8 @@
         android:id="@+id/toolbar_frame_layout"
         android:layout_width="match_parent"
         android:layout_height="56dp"
+        android:background="@color/yellow"
         app:layout_constraintEnd_toEndOf="parent"
-        android:background="@color/Main_color"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -60,9 +60,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_frame_layout"
         mapbox:layout_constraintEnd_toEndOf="parent"
-        mapbox:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/toolbar_frame_layout">
+        mapbox:layout_constraintStart_toStartOf="parent">
 
         <EditText
             android:id="@+id/delivery_search_edt"
@@ -97,19 +97,19 @@
     </FrameLayout>
 
 
-
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/find_my_location_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|start"
-        android:backgroundTint="@color/white"
-        android:scaleType="centerCrop"
         android:layout_marginStart="32dp"
         android:layout_marginBottom="8dp"
-        android:src="@drawable/ic_my_location"
+        android:scaleType="centerCrop"
+        app:backgroundTint="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/frameLayout4"
         app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_my_location"
+        app:tint="?colorOnPrimary"
         mapbox:fabSize="mini" />
 
     <FrameLayout
@@ -128,32 +128,30 @@
                 android:id="@+id/delivery_confirm_origin_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginBottom="8dp"
                 android:text="@string/confirm_origin"
+                android:textColor="@color/black"
+                app:backgroundTint="@color/yellow"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginStart="32dp"
-                app:backgroundTint="@color/Main_color"
-                android:textColor="@color/black"
-                android:layout_marginBottom="8dp"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/delivery_confirm_destination_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/confirm_destination"
                 android:layout_marginEnd="32dp"
-                app:backgroundTint="@color/Main_color"
-                android:textColor="@color/black"
                 android:layout_marginBottom="8dp"
+                android:text="@string/confirm_destination"
+                android:textColor="@color/black"
+                app:backgroundTint="@color/yellow"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-
-
 
 
     </FrameLayout>

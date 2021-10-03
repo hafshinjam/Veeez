@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layoutDirection="rtl"
     android:layout_height="match_parent"
-    tools:context=".Activities.AboutusActivity">
+    tools:context=".feature.AboutusActivity">
     <FrameLayout
         android:id="@+id/toolbar_frame_layout"
         android:layout_width="match_parent"
         android:layout_height="56dp"
         app:layout_constraintEnd_toEndOf="parent"
-        android:background="@color/Main_color"
+        android:background="@color/yellow"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 

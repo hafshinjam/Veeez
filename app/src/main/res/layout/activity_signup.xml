@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/ic_wave_4_copy"
-    tools:context=".Activities.auth.register.SignUpActivity">
+    tools:context=".feature.auth.register.SignUpActivity">
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/appCompatImageView3"
@@ -46,7 +46,7 @@
 
 
     <EditText
-        android:id="@+id/login_phone_edt"
+        android:id="@+id/name_edt"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:background="@drawable/bg_number_box"
@@ -113,7 +113,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_phone_edt" />
+        app:layout_constraintTop_toBottomOf="@+id/name_edt" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/register_btn"

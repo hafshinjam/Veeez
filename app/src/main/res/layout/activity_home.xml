@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/ic_wave_44"
     android:layoutDirection="rtl"
-    tools:context=".Activities.HomeActivity">
+    tools:context=".feature.home.HomeActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -148,6 +148,7 @@
                     android:paddingStart="8dp">
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/postal_courier_cv"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_marginTop="8dp"
@@ -165,22 +166,34 @@
 
                             <androidx.appcompat.widget.AppCompatImageView
                                 android:id="@+id/appCompatImageView7"
-                                android:layout_width="match_parent"
-                                android:layout_height="70dp"
+                                android:layout_width="64dp"
+                                android:layout_height="64dp"
+                                android:scaleType="centerInside"
                                 android:src="@drawable/postal_delivery"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent" />
 
                             <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/appCompatTextView11"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
                                 android:text="@string/postDeliveryCourier"
-                                android:layout_marginTop="8dp"
+                                android:textAppearance="?textAppearanceBody1"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toBottomOf="@+id/appCompatImageView7" />
 
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="تا بیست و پنج کیلوگرم"
+                                android:textAppearance="?textAppearanceBody2"
+                                android:textColor="?android:textColorSecondary"
+                                app:layout_constraintEnd_toEndOf="@+id/appCompatTextView11"
+                                app:layout_constraintStart_toStartOf="@+id/appCompatTextView11"
+                                app:layout_constraintTop_toBottomOf="@+id/appCompatTextView11" />
                         </androidx.constraintlayout.widget.ConstraintLayout>
 
                     </androidx.cardview.widget.CardView>
@@ -205,8 +218,10 @@
 
                             <androidx.appcompat.widget.AppCompatImageView
                                 android:id="@+id/appCompatImageView6"
-                                android:layout_width="match_parent"
-                                android:layout_height="70dp"
+                                android:layout_width="64dp"
+                                android:layout_height="64dp"
+                                android:layout_marginTop="2dp"
+                                android:scaleType="centerInside"
                                 android:src="@drawable/restaurant_delivery"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
@@ -217,6 +232,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="8dp"
                                 android:text="@string/restaurantShopCourier"
+                                android:textAppearance="?textAppearanceBody1"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toBottomOf="@+id/appCompatImageView6" />
@@ -250,24 +266,49 @@
                             android:padding="@dimen/dp8">
 
 
+
                             <androidx.appcompat.widget.AppCompatImageView
                                 android:id="@+id/appCompatImageView9"
-                                android:layout_width="match_parent"
-                                android:layout_height="70dp"
-                                android:src="@drawable/postpake"
+                                android:layout_width="84dp"
+                                android:layout_height="84dp"
                                 android:scaleType="centerInside"
+                                android:src="@drawable/postpake"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/appCompatTextView10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/normalDeliveryCourier"
+                                android:textAppearance="?textAppearanceBody1"
+                                android:layout_marginTop="8dp"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent" />
 
-                            <androidx.appcompat.widget.AppCompatTextView
+                            <TextView
+                                android:id="@+id/textView"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:textAppearance="?textAppearanceBody2"
+                                android:textColor="?android:textColorSecondary"
+                                android:text="ابعاد: 40*40*40"
                                 android:layout_marginTop="8dp"
-                                android:text="@string/normalDeliveryCourier"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/appCompatImageView9" />
+                                app:layout_constraintStart_toStartOf="@+id/appCompatTextView10"
+                                app:layout_constraintTop_toBottomOf="@+id/appCompatTextView10" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="تا بیست و پنج کیلوگرم"
+                                android:textAppearance="?textAppearanceBody2"
+                                android:textColor="?android:textColorSecondary"
+                                android:layout_marginTop="8dp"
+                                app:layout_constraintStart_toStartOf="@+id/textView"
+                                app:layout_constraintTop_toBottomOf="@+id/textView" />
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -289,6 +330,7 @@
     <!--this the navigation view which draws
        and shows the navigation drawer-->
     <!--include the menu created in the menu folder-->
+
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/homeNav"
         android:layout_width="wrap_content"

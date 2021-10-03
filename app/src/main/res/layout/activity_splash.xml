@@ -4,44 +4,69 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activities.Splash"
-    android:background="@color/Main_color"
-    >
+    android:background="@color/yellow"
+    tools:context=".feature.splash.SplashActivity">
 
-   <androidx.appcompat.widget.AppCompatImageView
-       android:id="@+id/splash"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:scaleType="fitXY"
-       android:src="@drawable/splash_image"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintTop_toTopOf="parent"
-       android:layout_marginRight="300dp"
-       />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/splash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="300dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/splash_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ویز جابجایی سریع کالا برای مشتریان،درآمدی بالا برای سفیران"
         android:textColor="#000000"
+        android:textSize="10sp"
         android:textStyle="bold"
-
         app:layout_constraintBottom_toTopOf="@+id/spin_kit"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:textSize="10sp"
-        />
+        app:layout_constraintStart_toStartOf="parent" />
 
-   <com.github.ybq.android.spinkit.SpinKitView
-       android:id="@+id/spin_kit"
-       style="@style/SpinKitView.Large.Circle"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:layout_gravity="center"
-       app:SpinKit_Color="@color/white"
-       app:layout_constraintBottom_toBottomOf="parent"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintStart_toStartOf="parent"
-       tools:ignore="MissingConstraints" />
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/spin_kit"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:SpinKit_Color="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/retry_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/retry"
+        android:textColor="?colorPrimary"
+        android:visibility="invisible"
+        app:backgroundTint="?colorOnPrimary"
+        android:textAppearance="?textAppearanceBody1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/retry_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="@string/server_error"
+        android:textAppearance="?textAppearanceHeadline5"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/retry_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

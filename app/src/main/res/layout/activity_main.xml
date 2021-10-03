@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activities.MainActivity"
+    tools:context=".feature.main.MainActivity"
     >
 
 
@@ -29,7 +29,7 @@
         app:piv_animationType="scale"
         app:piv_dynamicCount="true"
         app:piv_interactiveAnimation="true"
-        app:piv_selectedColor="@color/Main_color"
+        app:piv_selectedColor="@color/yellow"
         app:piv_unselectedColor="#000000"
         app:piv_viewPager="@id/intro_pager" />
 

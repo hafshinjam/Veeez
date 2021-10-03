@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/ic_wave_4"
-    tools:context=".Activities.auth.login.LoginActivity">
+    tools:context=".feature.auth.login.LoginActivity">
 
 
     <androidx.appcompat.widget.AppCompatImageView
@@ -53,6 +53,7 @@
         android:background="@drawable/bg_number_box"
         android:ems="10"
         android:gravity="right"
+        android:maxLength="11"
         android:hint="@string/phone_hint"
         android:inputType="phone"
         android:padding="@dimen/dp8"

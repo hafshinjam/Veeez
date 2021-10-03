@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:mapbox="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
     android:layoutDirection="rtl"
-    tools:context=".RestaurantActivity">
+    tools:context=".feature.map.PostalActivity">
 
     <FrameLayout
         android:id="@+id/frameLayout"
@@ -92,12 +92,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|start"
-        android:backgroundTint="@color/white"
-        android:scaleType="centerCrop"
         android:layout_marginStart="32dp"
-        android:src="@drawable/ic_my_location"
-        mapbox:fabSize="mini"
-        mapbox:layout_constraintBottom_toTopOf="@+id/frameLayout2"
-        mapbox:layout_constraintStart_toStartOf="parent" />
+        android:layout_marginBottom="8dp"
+        android:scaleType="centerCrop"
+        app:backgroundTint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_my_location"
+        app:tint="?colorOnPrimary"
+        mapbox:fabSize="mini" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

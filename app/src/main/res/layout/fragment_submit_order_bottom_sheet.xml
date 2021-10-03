@@ -2,89 +2,407 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:layoutDirection="rtl"
-    android:layout_height="match_parent">
+    android:orientation="vertical">
 
     <View
         android:layout_width="50dp"
         android:layout_height="1dp"
-        android:background="@color/darkGray"
         android:layout_gravity="center"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="16dp"
+        android:background="@color/darkGray" />
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="32dp"
-        android:layout_marginStart="16dp">
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp">
 
         <TextView
             android:id="@+id/origin_hint"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:text="مبدا:"/>
+            android:text="@string/origin" />
 
         <TextView
             android:id="@+id/origin_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/termsOfServicesText3"
-            android:layout_toEndOf="@id/origin_hint"
-            android:lines="1"
             android:layout_centerVertical="true"
             android:layout_marginStart="4dp"
-            android:layout_marginEnd="16dp"/>
+            android:layout_marginEnd="16dp"
+            android:layout_toEndOf="@id/origin_hint"
+            android:lines="1"
+            tools:text="@string/termsOfServicesText3" />
 
     </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="12dp"
-        android:layout_marginStart="16dp">
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp">
 
         <TextView
             android:id="@+id/destination_hint"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:text="مقصد:"/>
+            android:text="@string/destination" />
 
         <TextView
             android:id="@+id/destination_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/termsOfServicesText3"
-            android:layout_toEndOf="@id/destination_hint"
-            android:lines="1"
             android:layout_centerVertical="true"
             android:layout_marginStart="4dp"
-            android:layout_marginEnd="16dp"/>
+            android:layout_marginEnd="16dp"
+            android:layout_toEndOf="@id/destination_hint"
+            android:lines="1"
+            tools:text="@string/termsOfServicesText3" />
 
     </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/postal_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/envelope_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/envelop_require" />
+
+            <TextView
+                android:id="@+id/envelop_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="16dp"
+                android:layout_toEndOf="@id/envelope_hint"
+                android:lines="1"
+                tools:text="َA4" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/relativeLayout4">
+
+            <TextView
+                android:id="@+id/box_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/box_require" />
+
+            <TextView
+                android:id="@+id/box_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="16dp"
+                android:layout_toEndOf="@id/box_hint"
+                android:lines="1"
+                tools:text="َA4" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/relativeLayout4"
+            app:layout_constraintTop_toBottomOf="@id/relativeLayout4">
+
+            <TextView
+                android:id="@+id/size_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="سایز محصول" />
+
+            <TextView
+                android:id="@+id/size_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="16dp"
+                android:layout_toEndOf="@id/size_hint"
+                android:lines="1"
+                tools:text="َA4" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/relativeLayout6"
+            app:layout_constraintStart_toStartOf="@+id/relativeLayout5"
+            app:layout_constraintTop_toTopOf="@+id/relativeLayout6">
+
+            <TextView
+                android:id="@+id/cost_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="1dp"
+                android:text="ارزش محصول" />
+
+            <TextView
+                android:id="@+id/cost_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="16dp"
+                android:layout_toEndOf="@id/cost_hint"
+                android:lines="1"
+                tools:text="َA4" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/relativeLayout6"
+            app:layout_constraintStart_toStartOf="@id/relativeLayout6"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp">
+
+            <TextView
+                android:id="@+id/insurance_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/insurance_require" />
+
+            <TextView
+                android:id="@+id/insurance_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="16dp"
+                android:layout_toEndOf="@id/insurance_hint"
+                android:lines="1"
+                tools:text="َA4" />
+
+        </RelativeLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp">
+
+
+        <TextView
+            android:id="@+id/discount_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/have_you_discount_code" />
+
+        <EditText
+            android:id="@+id/voucher_edt"
+            android:layout_width="100dp"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="80dp"
+            android:layout_toStartOf="@+id/apply_voucher_btn"
+            android:layout_toEndOf="@id/discount_hint"
+            android:background="@drawable/background_search_edt"
+            android:inputType="text"
+            android:lines="1"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:minLines="1"
+            android:textAppearance="?textAppearanceBody2"
+            android:textColor="?android:textColorSecondary" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/apply_voucher_btn"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:text="@string/apply"
+            android:textColor="@color/yellow" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/remove_voucher_btn"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:text="@string/remove_code"
+            android:textColor="@color/yellow"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp">
+
+
+        <TextView
+            android:id="@+id/detail_hint_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/more_detail" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@id/detail_hint_tv"
+            android:text="@string/optional" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp">
+
+        <EditText
+            android:id="@+id/detail_edt"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@drawable/background_search_edt"
+            android:gravity="center_vertical"
+            android:hint="جزئیات سفر ( پلاک، ساختمان، واحد و.. )"
+            android:inputType="text"
+            android:lines="2"
+            android:maxLength="100"
+            android:maxLines="2"
+            android:minLines="1"
+
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textSize="12sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:id="@+id/payable_price_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/payable_price" />
+
+        <TextView
+            android:id="@+id/price_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="16dp"
+            android:layout_toEndOf="@id/payable_price_hint"
+            android:lines="1"
+            tools:text="20,000 تومان" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp">
+
+
+        <RadioGroup
+            android:id="@+id/payment_method_rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/payment_at_origin_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/payment_in_origin" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/payment_at_destination_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/payment_in_destination" />
+        </RadioGroup>
+
+
+    </RelativeLayout>
+
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/submit_order_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/submit_order"
         android:layout_marginStart="64dp"
-        app:backgroundTint="@color/Main_color"
-        android:textColor="@color/black"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="64dp"
         android:layout_marginBottom="64dp"
-        android:layout_marginTop="32dp"/>
-
-
+        android:text="@string/submit_order"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/yellow" />
 
 
 </LinearLayout>

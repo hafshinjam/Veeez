@@ -50,7 +50,7 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginBottom="16dp"
                     android:id="@+id/view"
-                    android:background="@color/Main_color"
+                    android:background="@color/yellow"
                     android:layout_marginStart="8dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/messageDate"

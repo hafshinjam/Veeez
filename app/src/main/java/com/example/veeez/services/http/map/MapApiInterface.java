@@ -1,7 +1,7 @@
 package com.example.veeez.services.http.map;
 
 
-import com.example.veeez.Activities.map.search.SearchModel;
+import com.example.veeez.feature.map.search.SearchModel;
 import com.example.veeez.data.ReverseResponse;
 import com.google.gson.JsonObject;
 

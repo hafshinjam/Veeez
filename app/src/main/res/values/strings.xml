@@ -8,20 +8,56 @@
 
     <string name="mapbox_access_token">pk.eyJ1Ijoic2FqamFkYWxpemFkZWgiLCJhIjoiY2t0aDhmdWJhMHBqZDJ1cGV6Nmd1M2JkbCJ9.VGRKHN44wV9P2qTHY4BOPA</string>
 
+    <string name="origin">مبدا:</string>
+    <string name="destination">مقصد:</string>
+    <string name="payable_price">مبلغ قابل پرداخت:</string>
+    <string name="have_you_discount_code">کد تخفیف دارید؟</string>
+    <string name="apply">اعمال</string>
+    <string name="remove_code">حذف کد تخفیف</string>
+
+
     <string name="origin_search">جستجوی مبدا</string>
     <string name="destination_search">جستجوی مقصد</string>
     <string name="text_search">جستجوی متنی</string>
     <string name="search">جستجو در ویز</string>
     <string name="confirm_origin">تایید مبدا</string>
-    <string name="select_origin">انتخاب مبدا</string>
+    <string name="enter_validate_code">کد دریافتی را وارد کنید</string>
+    <string name="remove_origin">حذف مبدا</string>
+    
+    <string name="city_not_available">امکان سرویس دهی در این شهر وجود ندارد</string>
 
     <string name="confirm_destination">تایید مقصد</string>
-    <string name="select_destination">انتخاب مقصد</string>
+    <string name="remove_destination">حذف مقصد</string>
 
     <string name="network_error">خطا در دریافت اطلاعات</string>
 
     <string name="retry">تلاش دوباره</string>
     <string name="username">نام کاربری</string>
+
+    <string name="envelop_require">پاکت مورد نیاز</string>
+    <string name="box_require">کارتون مورد نیاز</string>
+    <string name="insurance_require">بیمه درخواستی</string>
+
+
+    <string name="server_error">خطا در دریافت اطلاعات</string>
+
+    <string-array name="envelopes">
+        <item>A4</item>
+        <item>A3</item>
+        <item>CD</item>
+    </string-array>
+
+    <string name="veeez_continue">ادامه</string>
+    <string name="payment_method">شیوه پرداخت:</string>
+    <string name="payment_in_origin">پرداخت در مبدا</string>
+    <string name="payment_in_destination">پرداخت در مقصد</string>
+    <string name="more_detail">توضیحات تکمیلی</string>
+    <string name="optional">(اختیاری)</string>
+    <string name="types_of_envelopes">انواع پاکت</string>
+
+    <string name="a4_envelopes">پاکت A4</string>
+    <string name="a3_envelopes">پاکت A3</string>
+    <string name="cd_envelopes">پاکت CD</string>
 
 
     <string name="welcome">به ویز خوش آمدید</string>

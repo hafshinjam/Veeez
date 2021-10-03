@@ -5,10 +5,14 @@
     <color name="purple_700">#FFD700</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="main_color">#FFFFFFFF</color>
-    <color name="Main_color">#FFD700</color>
+
+    <color name="yellow">#FFD700</color>
+    <color name="black">#282932</color>
+    <color name="darkGray">#7e7d7d</color>
+    <color name="gray">#F4EFEF</color>
+
     <color name="stroke">#FF5722</color>
     <color name="error_text">#B00020</color>
     <color name="primaryColor">#000000</color>
@@ -21,8 +25,6 @@
 
     <color name="statusBarColor">#FFCC00</color>
 
-    <color name="gray">#F4EFEF</color>
-    <color name="darkGray">#B3B6Be</color>
 
 
 </resources>

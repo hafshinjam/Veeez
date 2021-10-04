@@ -31,6 +31,7 @@ public class MessageActivity extends AppCompatActivity {
 
     private RecyclerView messageRecycler;
     private MessageRecyclerAdapter mMessageRecyclerAdapter;
+    private ImageView emptyListImage;
 
 
     @Override
@@ -40,6 +41,7 @@ public class MessageActivity extends AppCompatActivity {
 
         ic_back = findViewById(R.id.address_back_btn);
         messageRecycler = findViewById(R.id.addressRv);
+        emptyListImage = findViewById(R.id.emptyInboxMessage);
 
         messageViewModel = new MessageViewModel(VeeezApiInterfaceProvider.getInstance());
         messageRecycler.setLayoutManager(new LinearLayoutManager(this));
@@ -55,8 +57,17 @@ public class MessageActivity extends AppCompatActivity {
 
                     @Override
                     public void onSuccess(@NonNull UserMessageResponse o) {
-                        mMessageRecyclerAdapter = new MessageRecyclerAdapter(new UserMessageResponse());
-                        messageRecycler.setAdapter(mMessageRecyclerAdapter);
+                        if (o.getStatus() != 0) {
+                            mMessageRecyclerAdapter = new MessageRecyclerAdapter(o);
+                            messageRecycler.setAdapter(mMessageRecyclerAdapter);
+                            mMessageRecyclerAdapter.notifyDataSetChanged();
+                            messageRecycler.setVisibility(View.VISIBLE);
+                            emptyListImage.setVisibility(View.INVISIBLE);
+                        } else {
+                            messageRecycler.setVisibility(View.INVISIBLE);
+                            emptyListImage.setVisibility(View.VISIBLE);
+                        }
+
                     }
 
                     @Override

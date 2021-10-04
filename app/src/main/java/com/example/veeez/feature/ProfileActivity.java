@@ -1,5 +1,6 @@
 package com.example.veeez.feature;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -10,7 +11,15 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.example.veeez.R;
+import com.example.veeez.User;
 import com.example.veeez.feature.address.AddressActivity;
+import com.example.veeez.services.http.veeez.VeeezApiInterfaceProvider;
+
+import io.reactivex.SingleObserver;
+import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.disposables.CompositeDisposable;
+import io.reactivex.disposables.Disposable;
+import io.reactivex.schedulers.Schedulers;
 
 public class ProfileActivity extends AppCompatActivity {
 
@@ -20,14 +29,13 @@ public class ProfileActivity extends AppCompatActivity {
     CardView cons_message;
     CardView logOut;
     ImageView profileEditButton;
-
     private ConstraintLayout constraintLayout;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
-
         ic_back = findViewById(R.id.profile_back_btn);
 
         constraintLayout = findViewById(R.id.cons_address);
@@ -49,7 +57,6 @@ public class ProfileActivity extends AppCompatActivity {
         cons_adress = findViewById(R.id.profileAddressLayout);
         cons_message = findViewById(R.id.profileMessageLayout);
         logOut = findViewById(R.id.profileLogoutLayout);
-
 
         ic_back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,6 +80,7 @@ public class ProfileActivity extends AppCompatActivity {
                 startActivity(new Intent(ProfileActivity.this, MessageActivity.class));
             }
         });
+
 
     }
 }

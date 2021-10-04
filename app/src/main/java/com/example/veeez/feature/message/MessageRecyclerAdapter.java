@@ -44,7 +44,7 @@ public class MessageRecyclerAdapter extends RecyclerView.Adapter<MessageRecycler
         }
 
         public void bind(MessageObject message) {
-            messageText.setText(message.getBody());
+            messageText.setText(message.getText());
         }
     }
 }

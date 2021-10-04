@@ -17,7 +17,7 @@ public class MessageViewModel {
 
     public Single<UserMessageResponse> getUserMessages(Context context) {
         UserManager userManager = new UserManager(context);
-        String userId = userManager.getUserId();
-        return apiInterface.getUserMessages(userId);
+        String id = userManager.getUserId();
+        return apiInterface.getUserMessages(id);
     }
 }

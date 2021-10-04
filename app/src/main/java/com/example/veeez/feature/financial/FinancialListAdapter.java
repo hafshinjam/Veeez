@@ -3,6 +3,7 @@ package com.example.veeez.feature.financial;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -26,21 +27,33 @@ public class FinancialListAdapter extends RecyclerView.Adapter<FinancialListAdap
 
     @Override
     public void onBindViewHolder(@NonNull FinancialViewHolder holder, int position) {
-        holder.bind(mFinancialResponse.getFinancialItems().get(position));
+        holder.bind(mFinancialResponse.getItems().get(position));
     }
 
     @Override
     public int getItemCount() {
-        return mFinancialResponse.getFinancialItems().size();
+        return mFinancialResponse.getItems().size();
     }
 
     public class FinancialViewHolder extends RecyclerView.ViewHolder {
+        TextView titleFinancial;
+        TextView descriptionFinancial;
+        TextView amountFinancial;
+        TextView dateFinancial;
+
         public FinancialViewHolder(@NonNull View itemView) {
             super(itemView);
+            titleFinancial = itemView.findViewById(R.id.titleFinancialItem);
+            descriptionFinancial = itemView.findViewById(R.id.descriptionFinancialItem);
+            amountFinancial = itemView.findViewById(R.id.amountFinancialItem);
+            dateFinancial = itemView.findViewById(R.id.dateFinancialItem);
         }
 
         public void bind(FinancialItem item) {
-
+            titleFinancial.setText(item.getTitle());
+            descriptionFinancial.setText(item.getDescription());
+            amountFinancial.setText(String.valueOf(item.getAmount()));
+            dateFinancial.setText(item.getDateTime());
         }
     }
 }

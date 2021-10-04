@@ -1,5 +1,7 @@
 package com.example.veeez.services.http.veeez;
 
+import com.example.veeez.User;
+import com.example.veeez.feature.EditUserResponse;
 import com.example.veeez.data.ApplyVoucherResponse;
 import com.example.veeez.data.AuthResponse;
 import com.example.veeez.data.CalculatePriceResponse;
@@ -42,11 +44,11 @@ public interface VeeezApiInterface {
     @GET("UserInformation/Notification")
     Single<UserMessageResponse> getUserMessages(@Query("UserId") String userId);
 
-    @GET()
-    Single getUserInfo(@Query("UserId") String userId);
+    @GET("UserInformation/getUser")
+    Single<User> getUserInfo(@Query("UserId") String userId);
 
     @POST("UserInformation/EditUser")
-    Single editUserData(@Body JsonObject userObject);
+    Single<EditUserResponse> editUserData(@Body JsonObject userObject);
 
     @GET("UserInformation/Payment")
     Single<FinancialResponse> getFinancialItems(@Query("UserId") String userId);

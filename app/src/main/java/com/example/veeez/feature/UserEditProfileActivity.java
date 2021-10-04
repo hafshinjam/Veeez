@@ -44,7 +44,8 @@ public class UserEditProfileActivity extends AppCompatActivity {
 
     private CompositeDisposable compositeDisposable = new CompositeDisposable();
 
-    private UserEditViewModel viewModel = new UserEditViewModel(VeeezApiInterfaceProvider.getInstance());
+    private UserEditViewModel viewModel = new UserEditViewModel(VeeezApiInterfaceProvider.getInstance(),
+            getApplicationContext());
     private PersianCalendar initDate = new PersianCalendar();
 
 
@@ -64,7 +65,7 @@ public class UserEditProfileActivity extends AppCompatActivity {
                 gender = 2;
             else
                 gender = 1;
-            viewModel.editProfile(firstNameEdt.getText().toString(),
+            viewModel.editProfile( firstNameEdt.getText().toString(),
                     lastNameEdt.getText().toString(),
                     phoneNumberEdt.getText().toString(),
                     gender,
@@ -73,18 +74,21 @@ public class UserEditProfileActivity extends AppCompatActivity {
                     birthDayEdt.getText().toString())
                     .subscribeOn(Schedulers.io())
                     .observeOn(AndroidSchedulers.mainThread())
-                    .subscribe(new SingleObserver() {
+                    .subscribe(new SingleObserver<EditUserResponse>() {
                         @Override
                         public void onSubscribe(@NonNull Disposable d) {
                             compositeDisposable.add(d);
                         }
 
                         @Override
-                        public void onSuccess(@NonNull Object o) {
-                            Toast.makeText(UserEditProfileActivity.this
-                                    , "اطلاعات با موفقیت ویرایش شد!!!",
-                                    Toast.LENGTH_LONG).show();
-                            finish();
+                        public void onSuccess(@NonNull EditUserResponse o) {
+
+                            if (o.getStatus()==1){
+                                Toast.makeText(UserEditProfileActivity.this
+                                        , "اطلاعات با موفقیت ویرایش شد!!!",
+                                        Toast.LENGTH_LONG).show();
+                                finish();
+                            }
                         }
 
                         @Override
@@ -115,7 +119,7 @@ public class UserEditProfileActivity extends AppCompatActivity {
                                     Toast.makeText(UserEditProfileActivity.this,
                                             persianCalendar.getPersianYear() + "/" + persianCalendar.getPersianMonth() + "/" + persianCalendar.getPersianDay(),
                                             Toast.LENGTH_SHORT).show();
-                                    initDate= persianCalendar;
+                                    initDate = persianCalendar;
                                     birthDayEdt.setText(initDate.getPersianLongDate());
                                 }
 

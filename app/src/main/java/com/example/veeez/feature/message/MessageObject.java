@@ -1,19 +1,28 @@
 package com.example.veeez.feature.message;
 
-public class MessageObject {
-    private String id;
-    private String body;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
 
-    public MessageObject(String id, String body) {
-        this.id = id;
-        this.body = body;
+public class MessageObject {
+    @Expose
+    @SerializedName("Text")
+    private String text;
+    @Expose
+    @SerializedName("Id")
+    private int id;
+    @Expose
+    @SerializedName("DateTime")
+    private String dateTime;
+
+    public String getText() {
+        return text;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public String getBody() {
-        return body;
+    public String getDateTime() {
+        return dateTime;
     }
 }

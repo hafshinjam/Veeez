@@ -26,6 +26,7 @@ public class FinanntialActivity extends AppCompatActivity {
 
     ImageView ic_back;
     private RecyclerView recyclerView;
+    private ImageView emptyListImage;
     private FinancialListAdapter adapter;
     private FinancialViewModel viewModel;
     private CompositeDisposable compositeDisposable = new CompositeDisposable();
@@ -34,7 +35,9 @@ public class FinanntialActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_finanntial);
-        viewModel = new FinancialViewModel(VeeezApiInterfaceProvider.getInstance());
+        viewModel = new FinancialViewModel(VeeezApiInterfaceProvider.getInstance(),
+                getApplicationContext());
+        emptyListImage = findViewById(R.id.emptyListFinancialImage);
         viewModel.getFinancialResponse()
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
@@ -46,8 +49,15 @@ public class FinanntialActivity extends AppCompatActivity {
 
                     @Override
                     public void onSuccess(@NonNull FinancialResponse response) {
-                        adapter = new FinancialListAdapter(response);
-                        recyclerView.setAdapter(adapter);
+                        if (response.getStatus() == 1) {
+                            adapter = new FinancialListAdapter(response);
+                            recyclerView.setAdapter(adapter);
+                            recyclerView.setVisibility(View.VISIBLE);
+                            emptyListImage.setVisibility(View.INVISIBLE);
+                        } else {
+                            recyclerView.setVisibility(View.INVISIBLE);
+                            emptyListImage.setVisibility(View.VISIBLE);
+                        }
                     }
 
                     @Override

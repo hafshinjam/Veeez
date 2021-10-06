@@ -39,9 +39,9 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/edit_profile_name_text_input"
+        style="@style/shippingTextInputLayoutStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/shippingTextInputLayoutStyle"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
@@ -96,64 +96,12 @@
             style="@style/postalOrderEditTextStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="شماره تلفن"
+            android:hint="شماره تلفن ثابت"
             android:inputType="phone"
             android:textAppearance="?textAppearanceBody1" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/edit_profile_gender_layout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_profile_phone_text_input">
 
-        <TextView
-            android:id="@+id/edit_profile_gender_label"
-            style="@style/postalOrderEditTextStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="13dp"
-            android:layout_marginEnd="8dp"
-            android:text="جنسیت"
-            android:textAppearance="?textAppearanceBody1"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/edit_profile_gender_radio"
-            app:layout_constraintTop_toTopOf="@+id/edit_profile_gender_radio" />
-
-        <RadioGroup
-            android:id="@+id/edit_profile_gender_radio"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toStartOf="@id/edit_profile_gender_label"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <RadioButton
-                android:id="@+id/maleGenderRadio"
-                style="@style/postalOrderEditTextStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="آقا"
-                android:textAppearance="?textAppearanceBody1" />
-
-            <RadioButton
-                android:id="@+id/femaleGenderRadio"
-                style="@style/postalOrderEditTextStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="خانم"
-                android:textAppearance="?textAppearanceBody1" />
-        </RadioGroup>
-    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/edit_profile_email_text_input"
@@ -165,7 +113,7 @@
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_profile_gender_layout">
+        app:layout_constraintTop_toBottomOf="@id/edit_profile_phone_text_input">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editProfileEmailEditText"
@@ -198,33 +146,91 @@
             android:textAppearance="?textAppearanceBody1" />
     </com.google.android.material.textfield.TextInputLayout>
 
+    <TextView
+        android:id="@+id/edit_profile_gender_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="جنسیت:"
+        android:textColor="?android:textColorSecondary"
+        android:layout_marginTop="12dp"
+        android:textAppearance="?textAppearanceHeadline5"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintStart_toStartOf="@+id/edit_profile_full_address_text_input"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout2" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/editProfileBirthdayText"
+        app:layout_constraintStart_toStartOf="@+id/editProfileBirthdayText"
+        app:layout_constraintTop_toBottomOf="@+id/editProfileBirthdayText">
+
+        <RadioGroup
+            android:id="@+id/edit_profile_gender_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toStartOf="@id/edit_profile_gender_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RadioButton
+                android:id="@+id/maleGenderRadio"
+                style="@style/postalOrderEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="آقا"
+                android:textAppearance="?textAppearanceBody1" />
+
+            <RadioButton
+                android:id="@+id/femaleGenderRadio"
+                style="@style/postalOrderEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="خانم"
+                android:textAppearance="?textAppearanceBody1" />
+        </RadioGroup>
+
+    </LinearLayout>
+
     <EditText
         android:id="@+id/editProfileBirthdayText"
-        style="@style/postalOrderEditTextStyle"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="48dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_search_edt"
         android:ems="10"
         android:focusable="false"
         android:hint="تاریخ تولد"
+        android:paddingStart="16dp"
         android:inputType="none"
         android:textAppearance="?textAppearanceBody1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edit_profile_full_address_text_input"
+        app:layout_constraintStart_toStartOf="@+id/edit_profile_full_address_text_input"
         app:layout_constraintTop_toBottomOf="@+id/edit_profile_full_address_text_input" />
 
     <Button
         android:id="@+id/editProfileConfirmButton"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
         android:text="تایید"
         android:textAppearance="?textAppearanceBody1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editProfileBirthdayText" />
+        android:layout_marginBottom="16dp"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

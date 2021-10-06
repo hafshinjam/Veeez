@@ -123,7 +123,7 @@
     <string name="creditIncreaseTo">اعتبار بعد از افزایش</string>
     <string name="payableAmount">مبلغ قابل پرداخت</string>
 
-    <string name="payType">نوع پرداخت</string>
+    <string name="price">قیمت</string>
 
     <string name="getAddress">مبدا</string>
     <string name="postAddress">مقصد</string>
@@ -216,5 +216,8 @@
     <string name="questionText25">بله. قیمت‌ها بر اساس ساعت‌های روز،  میزان ترافیک، دسترسی، درخواست‌های محدوده و نوع سرویس درخواستی شما متغیر هستند</string>
     <string name="questionText26">11-حسابم را آنلاین شارژ کرده‌ام، پول از حسابم کم شده ولی ویز من شارژ نشده است. لطفا راهنمایی‌ام کنید!</string>
     <string name="questionText27">مبلغ کسر شده طی ۷۲ ساعت کاری به حساب شما برگردانده خواهد شد. در صورت عدم بازپرداخت این مبلغ ، لطفا شماره پیگیری، 4 رقم اخر کارت بانکی خود، و مبلغ و تاریخ تراکنش را به آدرس ‌ الکترونیکیveeezdelivery@chmail.com ارسال کنید. بازپرداخت پول شما در اولین فرصت پیگیری و نتیجه به شما اطلاع داده می‌شود.</string>
+
+    <string name="share_with_friends" >با کد معرف من در اپلیکیشن ویز ثبت نام کنید. کد معرف: %1$s
+    </string>
 
 </resources>

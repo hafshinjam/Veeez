@@ -9,6 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.veeez.R;
+import com.example.veeez.common.Utils;
 
 public class FinancialListAdapter extends RecyclerView.Adapter<FinancialListAdapter.FinancialViewHolder> {
     private FinancialResponse mFinancialResponse;
@@ -52,8 +53,9 @@ public class FinancialListAdapter extends RecyclerView.Adapter<FinancialListAdap
         public void bind(FinancialItem item) {
             titleFinancial.setText(item.getTitle());
             descriptionFinancial.setText(item.getDescription());
-            amountFinancial.setText(String.valueOf(item.getAmount()));
-            dateFinancial.setText(item.getDateTime());
+            amountFinancial.setText(String.valueOf(Utils.formatPrice(item.getAmount())));
+            String date = item.getDateTime().substring(0,item.getDateTime().lastIndexOf('-'));
+            dateFinancial.setText(date);
         }
     }
 }

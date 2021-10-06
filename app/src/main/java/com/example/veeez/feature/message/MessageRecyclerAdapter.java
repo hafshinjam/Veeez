@@ -37,14 +37,17 @@ public class MessageRecyclerAdapter extends RecyclerView.Adapter<MessageRecycler
 
     public class MessageViewHolder extends RecyclerView.ViewHolder {
         TextView messageText;
+        TextView messageDateTime;
 
         public MessageViewHolder(@NonNull View itemView) {
             super(itemView);
             messageText = itemView.findViewById(R.id.messageText);
+            messageDateTime = itemView.findViewById(R.id.message_date_time);
         }
 
         public void bind(MessageObject message) {
             messageText.setText(message.getText());
+            messageDateTime.setText(message.getDateTime());
         }
     }
 }

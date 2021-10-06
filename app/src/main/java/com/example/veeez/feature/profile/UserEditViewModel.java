@@ -1,8 +1,5 @@
 package com.example.veeez.feature.profile;
 
-import android.content.Context;
-
-import com.example.veeez.data.UserManager;
 import com.example.veeez.services.http.veeez.VeeezApiInterface;
 import com.google.gson.JsonObject;
 
@@ -10,10 +7,10 @@ import io.reactivex.Single;
 
 public class UserEditViewModel {
     private VeeezApiInterface apiInterface;
-    private UserManager userManager;
+    private String id = "";
 
-    public UserEditViewModel(VeeezApiInterface veeezApiInterface, Context context) {
-        userManager = new UserManager(context);
+    public UserEditViewModel(VeeezApiInterface veeezApiInterface, String userId) {
+        id = userId;
         if (apiInterface == null)
             apiInterface = veeezApiInterface;
     }
@@ -27,14 +24,15 @@ public class UserEditViewModel {
             String address,
             String birthday) {
         JsonObject jsonObject = new JsonObject();
-        jsonObject.addProperty("UserId", userManager.getUserId());
+        jsonObject.addProperty("UserId", id);
         jsonObject.addProperty("FirstName", firstName);
         jsonObject.addProperty("LastName", lastName);
         jsonObject.addProperty("Phone", phoneNumber);
         jsonObject.addProperty("Gender", gender);
         jsonObject.addProperty("Email", email);
         jsonObject.addProperty("FullAddress", address);
-        jsonObject.addProperty("BirthDate", birthday);
+        if (birthday != null)
+            jsonObject.addProperty("BirthDate", birthday);
         return apiInterface.editUserData(jsonObject);
     }
 }

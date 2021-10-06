@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".feature.ProfileActivity">
 
 
@@ -11,9 +12,10 @@
         android:id="@+id/toolbar_frame_layout"
         android:layout_width="match_parent"
         android:layout_height="56dp"
+        android:background="@color/yellow"
         android:layoutDirection="rtl"
         app:layout_constraintEnd_toEndOf="parent"
-        android:background="@color/yellow"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -33,8 +35,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical|start"
             android:layout_marginStart="56dp"
-            android:text="@string/profileEdit"
             android:fontFamily="@font/primary_bold"
+            android:text="@string/profileEdit"
 
             />
     </FrameLayout>
@@ -61,34 +63,53 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/profileCv"
-                    android:layout_width="96dp"
-                    android:layout_height="96dp"
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/profileIv"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="1dp"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent">
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/logo" />
 
-                    <androidx.appcompat.widget.AppCompatImageView
-                        android:id="@+id/profileIv"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="centerInside"
-                        android:src="@drawable/logo" />
-
-                </androidx.cardview.widget.CardView>
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/editImageButton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="-4dp"
+                    android:layout_marginBottom="-4dp"
+                    android:alpha=".9"
+                    android:background="@color/yellow"
+                    android:scaleType="centerInside"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:tint="@color/black"
+                    app:layout_constraintBottom_toBottomOf="@+id/profileIv"
+                    app:layout_constraintEnd_toEndOf="@+id/profileIv"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/profileIv"
+                    app:layout_constraintTop_toTopOf="@+id/profileIv"
+                    app:layout_constraintVertical_bias="1.0"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+                    app:srcCompat="@drawable/ic_edit" />
 
                 <TextView
                     android:id="@+id/profileTvFullName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
+                    android:layout_marginStart="32dp"
                     android:layout_marginBottom="8dp"
                     android:alpha="0.87"
                     android:text="@string/username"
                     android:textAppearance="?textAppearanceBody1"
                     app:layout_constraintBottom_toTopOf="@+id/profileTvGmail"
-                    app:layout_constraintStart_toEndOf="@+id/profileCv"
+                    app:layout_constraintStart_toEndOf="@+id/profileIv"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_chainStyle="packed" />
 
@@ -273,7 +294,7 @@
 
     </LinearLayout>
 
-    </RelativeLayout>
+</RelativeLayout>
 
 
 

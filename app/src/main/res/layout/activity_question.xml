@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:layoutDirection="rtl"
+    android:orientation="vertical"
     tools:context=".feature.QuestionActivity">
 
 
@@ -13,8 +13,8 @@
         android:id="@+id/toolbar_frame_layout"
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        app:layout_constraintEnd_toEndOf="parent"
         android:background="@color/yellow"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -34,12 +34,11 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical|start"
             android:layout_marginStart="56dp"
-            android:text="@string/questions"
             android:fontFamily="@font/primary_bold"
+            android:text="@string/questions"
 
             />
     </FrameLayout>
-
 
 
     <androidx.core.widget.NestedScrollView
@@ -55,48 +54,51 @@
             android:orientation="vertical">
 
             <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:alpha="0.86"
                 android:gravity="start"
                 android:paddingStart="16dp"
                 android:paddingTop="@dimen/dp8"
                 android:paddingEnd="16dp"
                 android:paddingBottom="@dimen/dp8"
-                android:textAppearance="?textAppearanceSubtitle1"                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/questionText1" />
+                android:text="@string/questionText1"
+                android:textAppearance="?textAppearanceSubtitle1" />
 
             <TextView
                 style="@style/Theme.Veeez.LongText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/questionText2" />
-
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:alpha="0.86"
                 android:gravity="start"
                 android:paddingStart="16dp"
                 android:paddingTop="@dimen/dp8"
                 android:paddingEnd="16dp"
                 android:paddingBottom="@dimen/dp8"
-                android:textAppearance="?textAppearanceSubtitle1"                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/questionText3" />
+                android:text="@string/questionText3"
+                android:textAppearance="?textAppearanceSubtitle1" />
 
             <TextView
                 style="@style/Theme.Veeez.LongText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/questionText4" />
+
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:alpha="0.86"
                 android:gravity="start"
                 android:paddingStart="16dp"
                 android:paddingTop="@dimen/dp8"
                 android:paddingEnd="16dp"
                 android:paddingBottom="@dimen/dp8"
-                android:textAppearance="?textAppearanceSubtitle1"                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/questionText5" />
+                android:text="@string/questionText5"
+                android:textAppearance="?textAppearanceSubtitle1" />
 
             <TextView
                 style="@style/Theme.Veeez.LongText"
@@ -105,15 +107,16 @@
                 android:text="@string/questionText6" />
 
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:alpha="0.86"
                 android:gravity="start"
                 android:paddingStart="16dp"
                 android:paddingTop="@dimen/dp8"
                 android:paddingEnd="16dp"
                 android:paddingBottom="@dimen/dp8"
-                android:textAppearance="?textAppearanceSubtitle1"                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/questionText7" />
+                android:text="@string/questionText7"
+                android:textAppearance="?textAppearanceSubtitle1" />
 
             <TextView
                 style="@style/Theme.Veeez.LongText"
@@ -122,15 +125,16 @@
                 android:text="@string/questionText8" />
 
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:alpha="0.86"
                 android:gravity="start"
                 android:paddingStart="16dp"
                 android:paddingTop="@dimen/dp8"
                 android:paddingEnd="16dp"
                 android:paddingBottom="@dimen/dp8"
-                android:textAppearance="?textAppearanceSubtitle1"                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/questionText9" />
+                android:text="@string/questionText9"
+                android:textAppearance="?textAppearanceSubtitle1" />
 
             <TextView
                 style="@style/Theme.Veeez.LongText"
@@ -139,15 +143,16 @@
                 android:text="@string/questionText10" />
 
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:alpha="0.86"
                 android:gravity="start"
                 android:paddingStart="16dp"
                 android:paddingTop="@dimen/dp8"
                 android:paddingEnd="16dp"
                 android:paddingBottom="@dimen/dp8"
-                android:textAppearance="?textAppearanceSubtitle1"                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/questionText11" />
+                android:text="@string/questionText11"
+                android:textAppearance="?textAppearanceSubtitle1" />
 
             <TextView
                 style="@style/Theme.Veeez.LongText"
@@ -156,36 +161,37 @@
                 android:text="@string/questionText12" />
 
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:alpha="0.86"
                 android:gravity="start"
                 android:paddingStart="16dp"
                 android:paddingTop="@dimen/dp8"
                 android:paddingEnd="16dp"
                 android:paddingBottom="@dimen/dp8"
-                android:textAppearance="?textAppearanceSubtitle1"                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/questionText13" />
+                android:text="@string/questionText13"
+                android:textAppearance="?textAppearanceSubtitle1" />
 
             <TextView
-                style="@style/Theme.Veeez.LongText.Cap"
+                style="@style/Theme.Veeez.LongText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/questionText14" />
 
             <TextView
-                style="@style/Theme.Veeez.LongText.Cap"
+                style="@style/Theme.Veeez.LongText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/questionText15"/>
+                android:text="@string/questionText15" />
 
             <TextView
-                style="@style/Theme.Veeez.LongText.Cap"
+                style="@style/Theme.Veeez.LongText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/questionText16" />
 
             <TextView
-                style="@style/Theme.Veeez.LongText.Cap"
+                style="@style/Theme.Veeez.LongText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/questionText17" />
@@ -197,19 +203,19 @@
                 android:text="@string/questionText18" />
 
             <TextView
-                style="@style/Theme.Veeez.LongText.Cap"
+                style="@style/Theme.Veeez.LongText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/questionText19" />
 
             <TextView
-                style="@style/Theme.Veeez.LongText.Cap"
+                style="@style/Theme.Veeez.LongText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/questionText20" />
 
             <TextView
-                style="@style/Theme.Veeez.LongText.Cap"
+                style="@style/Theme.Veeez.LongText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/questionText21" />

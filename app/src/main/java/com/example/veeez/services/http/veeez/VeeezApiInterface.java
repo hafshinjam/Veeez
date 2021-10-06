@@ -6,6 +6,7 @@ import com.example.veeez.data.ApplyVoucherResponse;
 import com.example.veeez.data.AuthResponse;
 import com.example.veeez.data.CalculatePriceResponse;
 import com.example.veeez.data.UserAddressResponse;
+import com.example.veeez.feature.OrderHistoryResponse;
 import com.example.veeez.feature.financial.FinancialResponse;
 import com.example.veeez.feature.message.UserMessageResponse;
 import com.google.gson.JsonObject;
@@ -53,5 +54,7 @@ public interface VeeezApiInterface {
     @GET("UserInformation/Payment")
     Single<FinancialResponse> getFinancialItems(@Query("UserId") String userId);
 
+    @GET("Orders/GetTrips")
+    Single<OrderHistoryResponse> getTripList(@Query("UserId") String userId);
 
 }

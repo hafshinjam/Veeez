@@ -19,6 +19,6 @@ public class FinancialViewModel {
 
     public Single<FinancialResponse> getFinancialResponse() {
         String id ="ba53ab81-fbf3-40b1-aacc-6be48841264f";
-        return mVeeezApiInterface.getFinancialItems(userManager.getUserId());
+        return mVeeezApiInterface.getFinancialItems(id);
     }
 }

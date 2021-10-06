@@ -27,7 +27,6 @@ import com.example.veeez.feature.map.PostalActivity;
 import com.google.android.material.navigation.NavigationView;
 
 
-
 public class HomeActivity extends AppCompatActivity {
 
 
@@ -107,7 +106,14 @@ public class HomeActivity extends AppCompatActivity {
                     case R.id.financialHistory:
                         startActivity(new Intent(HomeActivity.this, FinanntialActivity.class));
                         break;
-
+                    case R.id.share:
+                        Intent intent = new Intent(Intent.ACTION_SEND);
+                        intent.setType("text/plain");
+                        intent.putExtra(Intent.EXTRA_TEXT, getString(R.string.share_with_friends,"54565"));
+                        intent.putExtra(Intent.EXTRA_SUBJECT,"اپلیکیشن ویز");
+                        intent = Intent.createChooser(intent,"اشتراک گذاری");
+                        startActivity(intent);
+                        break;
                 }
                 drawerLayout.closeDrawers();
                 return true;

@@ -22,6 +22,7 @@ public class Base {
     public static final int TYPE_NORMAL_DELIVERY = 1;
     public static final int TYPE_POSTAL_DELIVERY = 2;
 
+    public static final String EXTRA_IMAGE_URI= "IMAGE";
 
     public static final int PAYMENT_METHOD_ORIGIN = 1;
     public static final int PAYMENT_METHOD_DESTINATION = 2;
